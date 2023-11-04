@@ -3,19 +3,19 @@ import Button from '../Button/Button';
 
 const ErrorElements = () => {
   return (
-    <div className="mx-auto max-w-[425px] md:max-w-[768px] lg:max-w-[1400px]">
-      <div className="mx-auto relative">
-        <img
-          className="w-full h-screen mx-auto"
-          src="https://i.ibb.co/KDm3CH4/gif-404.gif"
-          alt=""
-        />
+    <div className="mx-auto mt-20 h-screen">
+      <img
+        className="mx-auto h-[400px] w-[600px]"
+        src="https://i.ibb.co/ypzkwCB/404-animation.gif"
+        alt=""
+      />
+      <div className="mx-auto flex justify-center">
         <Link to="/">
-          <div className="absolute lg:top-[710px] lg:left-[610px] md:top-[280px] md:left-[290px] top-[280px] left-[120px]">
-            <Button>
-              <button className="btn rounded-full px-10">Back To Home</button>
-            </Button>
-          </div>
+          <Button>
+            <button className="btn rounded-full bg-slate-500 text-white px-10">
+              Back To Home
+            </button>
+          </Button>
         </Link>
       </div>
     </div>
