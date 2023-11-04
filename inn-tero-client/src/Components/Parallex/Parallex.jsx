@@ -25,14 +25,13 @@ const Parallex = () => {
     <div>
       <div style={divStyle} className="bgimg-1">
         <div className="caption">
-          <span className="border">SCROLL DOWN</span>
+          <span className="border">ELEGANT</span>
         </div>
       </div>
       <div style={{ position: 'relative' }}>
         <div style={contentStyle}>
-          <p>
-            Scroll up and down to really get the feeling of how Parallax
-            Scrolling works.
+          <p className="mx-auto flex justify-center">
+            Find Elegancy in the Calmness
           </p>
         </div>
       </div>
@@ -42,16 +41,15 @@ const Parallex = () => {
       <div className="bgimg-2">
         <div className="caption">
           <span className="border" style={borderStyle}>
-            LESS HEIGHT
+            MOMENTS
           </span>
         </div>
       </div>
 
       <div style={{ position: 'relative' }}>
         <div style={contentStyle}>
-          <p>
-            Scroll up and down to really get the feeling of how Parallax
-            Scrolling works.
+          <p className="mx-auto flex justify-center">
+            Your Best Moments Can Be Captured
           </p>
         </div>
       </div>
@@ -59,23 +57,22 @@ const Parallex = () => {
       <div className="bgimg-3">
         <div className="caption">
           <span className="border" style={borderStyle}>
-            SCROLL UP
+            DREAMS
           </span>
         </div>
       </div>
 
       <div style={{ position: 'relative' }}>
         <div style={contentStyle}>
-          <p>
-            Scroll up and down to really get the feeling of how Parallax
-            Scrolling works.
-          </p>
+          <p className="mx-auto flex justify-center">Live Your Dreams</p>
         </div>
       </div>
 
-      <div className="bgimg-2">
+      <div className="bgimg-4">
         <div className="caption">
-          <span className="border">COOL!</span>
+          <span className="border" style={borderStyle}>
+            PEACE
+          </span>
         </div>
       </div>
     </div>
