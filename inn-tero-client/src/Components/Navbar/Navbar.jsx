@@ -150,25 +150,25 @@ const Navbar = () => {
 
   const navs = (
     <>
-      <li className="text-white">
+      <li className="">
         <NavLink to="/">Home</NavLink>
       </li>
       {user ? null : (
         <>
-          <li className="text-white">
+          <li className="">
             <NavLink to="/login">Login</NavLink>
           </li>
-          <li className="text-white">
+          <li className="">
             <NavLink to="/register">Register</NavLink>
           </li>
         </>
       )}
       {user ? null : (
         <>
-          <li className="text-white">
+          <li className="">
             <NavLink to="/myBookings">My Bookings</NavLink>
           </li>
-          <li className="text-white">
+          <li className="">
             <NavLink to="/gallery">Gallery</NavLink>
           </li>
         </>
@@ -178,7 +178,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar  bg-transparent shadow-lg">
+      <div className="navbar  bg-base-100 shadow-lg">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn text-white btn-ghost lg:hidden">
