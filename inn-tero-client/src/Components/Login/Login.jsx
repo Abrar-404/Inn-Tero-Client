@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from '../../Providers/AuthProvider';
 
 const Login = () => {
-  const { signInUser, googleSignIn, googleRegister } = useContext(AuthContext);
+  const { loginUser, googleSignIn, googleRegister } = useContext(AuthContext);
   const [error, setError] = useState(null);
   const naviGate = useNavigate();
   const location = useLocation();
@@ -48,7 +48,7 @@ const Login = () => {
     const password = e.target.password.value;
     console.log(email, password);
 
-    signInUser(email, password)
+    loginUser(email, password)
       .then(result => {
         console.log(result);
         Swal.fire({
