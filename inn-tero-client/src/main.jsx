@@ -11,11 +11,13 @@ import Gallery from './Components/Gallery/Gallery';
 import AuthProvider from './Providers/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Rooms from './Components/Rooms/Rooms';
+import ErrorElements from './Components/ErrorElements/ErrorElements';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorElements></ErrorElements>,
     children: [
       {
         path: '/',
