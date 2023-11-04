@@ -10,6 +10,7 @@ import MyBookings from './Components/Bookings/MyBookings';
 import Gallery from './Components/Gallery/Gallery';
 import AuthProvider from './Providers/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Rooms from './Components/Rooms/Rooms';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <MyBookings></MyBookings>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: '/rooms',
+        element: (
+          <PrivateRoute>
+            <Rooms></Rooms>
           </PrivateRoute>
         ),
       },

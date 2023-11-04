@@ -35,6 +35,12 @@ const Navbar = () => {
           <li className="">
             <NavLink to="/myBookings">My Bookings</NavLink>
           </li>
+          <li className="">
+            <NavLink to="/rooms">Rooms</NavLink>
+          </li>
+          <li className="">
+            <NavLink to="/gallery">Gallery</NavLink>
+          </li>
         </>
       )}
 
@@ -42,6 +48,12 @@ const Navbar = () => {
         <>
           <li className="">
             <NavLink to="/myBookings">My Bookings</NavLink>
+          </li>
+          <li className="">
+            <NavLink to="/rooms">Rooms</NavLink>
+          </li>
+          <li className="">
+            <NavLink to="/gallery">Gallery</NavLink>
           </li>
         </>
       )}
@@ -76,11 +88,13 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <img
-            className="w-[120px] h-[40px]"
-            src="https://i.ibb.co/1f6R89x/inn-tero-high-resolution-logo-transparent.png"
-            alt=""
-          />
+          <Link to="/">
+            <img
+              className="w-[120px] h-[40px]"
+              src="https://i.ibb.co/1f6R89x/inn-tero-high-resolution-logo-transparent.png"
+              alt=""
+            />
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
