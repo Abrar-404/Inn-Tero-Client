@@ -1,16 +1,16 @@
+import Banner from '../Banner/Banner';
 import Feature from '../Feature/Feature';
 import Footer from '../Footer/Footer';
-
-import Parallex from '../Parallex/Parallex';
-import '../Styles/styles.css';
+import Parallax from '../Parallax/Parallax';
 import Video from '../Video/Video';
 
 const Home = () => {
   return (
     <div className="space-y-10">
+      <Banner></Banner>
       <Video></Video>
+      <Parallax></Parallax>
       <Feature></Feature>
-      <Parallex></Parallex>
       <Footer></Footer>
     </div>
   );

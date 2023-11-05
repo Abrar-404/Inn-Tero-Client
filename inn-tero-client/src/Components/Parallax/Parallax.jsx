@@ -1,4 +1,6 @@
-const Parallex = () => {
+import '../Styles/styles.css';
+
+const Parallax = () => {
   const divStyle = {
     color: '#777',
     backgroundColor: 'white',
@@ -79,4 +81,4 @@ const Parallex = () => {
   );
 };
 
-export default Parallex;
+export default Parallax;
