@@ -13,6 +13,7 @@ import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Rooms from './Components/Rooms/Rooms';
 import ErrorElements from './Components/ErrorElements/ErrorElements';
 import DiscountDetail from './Components/DiscountDetail/DiscountDetail';
+import Feature from './Components/Feature/Feature';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
       {
         path: '/discountDetails',
         element: <DiscountDetail></DiscountDetail>,
+      },
+      {
+        path: '/feature',
+        element: <Feature></Feature>,
+        // loader: () => fetch('')
       },
       {
         path: '/myBookings',

@@ -1,0 +1,17 @@
+[
+  {
+    "img": "https://i.ibb.co/wgwQzvm/hotels-sea-view-lookbooks-dezeen-2364-col-hero.gif",
+    "description": "A sea-facing room offers stunning ocean views from its window or balcony.",
+    "name": "Sea Facing"
+  },
+  {
+    "img": "https://i.ibb.co/txdwkfs/large-master-bedroom-of-an-holiday-villa.webp",
+    "description": "A spacious room with a large balcony for outdoor relaxation and panoramic views.",
+    "name": "Big Balcony"
+  },
+  {
+    "img": "https://i.ibb.co/qDJzssC/c-383-4f32a6bb-99d5-490d-ae29-da1c1686b981.jpg",
+    "description": "A tree-facing room offers serene views and a natural ambiance with its window overlooking a lush tree or forest.",
+    "name": "Nature Economy"
+  }
+]
