@@ -2,8 +2,9 @@ import { useLoaderData } from 'react-router-dom';
 
 const RoomDetails = () => {
   const roomDetail = useLoaderData();
+  console.log(roomDetail);
 
-  const { title, img } = roomDetail;
+  const { title, img, rooms } = roomDetail;
 
   return (
     <div>

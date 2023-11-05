@@ -5,18 +5,17 @@ const RoomCard = ({ room }) => {
 
   return (
     <div>
-      <div className="card  shadow-xl">
-        <figure>
-          <img className="w-[100%] h-[300px]" src={img} alt="Shoes" />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">
-            {description}
-            <div className="badge badge-secondary">Featured</div>
+      <div className="hero mb-10 bg-base-200">
+        <div className="hero-content flex-col lg:flex-row">
+          <img src={img} className="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <h1 className="text-5xl font-bold">Box Office News!</h1>
+            <p className="py-6">{description}</p>
+
             <Link to={`/rooms/${_id}`}>
               <button className="btn btn-primary">See Details</button>
             </Link>
-          </h2>
+          </div>
         </div>
       </div>
     </div>
