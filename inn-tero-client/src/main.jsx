@@ -15,6 +15,7 @@ import ErrorElements from './Components/ErrorElements/ErrorElements';
 import DiscountDetail from './Components/DiscountDetail/DiscountDetail';
 import Feature from './Components/Feature/Feature';
 import Newsletter from './Components/Newsletter/Newsletter';
+import RoomDetails from './Components/Rooms/RoomDetails';
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,16 @@ const router = createBrowserRouter([
             <Rooms></Rooms>
           </PrivateRoute>
         ),
+      },
+      {
+        path: '/rooms/:id',
+        element: (
+          <PrivateRoute>
+            <RoomDetails></RoomDetails>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/rooms/${params.id}`),
       },
       {
         path: '/newsletter',

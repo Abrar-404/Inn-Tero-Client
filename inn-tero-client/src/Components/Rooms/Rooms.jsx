@@ -14,9 +14,9 @@ const Rooms = () => {
     <div>
       <h1>Rooms : {rooms?.length}</h1>
       <div>
-        {
-          rooms?.map(room => <RoomCard key={room?._id} room={room}></RoomCard>)
-        }
+        {rooms?.map(room => (
+          <RoomCard key={room?._id} room={room}></RoomCard>
+        ))}
       </div>
     </div>
   );

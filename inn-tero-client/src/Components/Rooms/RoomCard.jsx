@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
+
 const RoomCard = ({ room }) => {
-  const { img, description } = room || {};
+  const { img, description, _id } = room || {};
 
   return (
     <div>
@@ -11,7 +13,9 @@ const RoomCard = ({ room }) => {
           <h2 className="card-title">
             {description}
             <div className="badge badge-secondary">Featured</div>
-            <button className="btn btn-primary">See Details</button>
+            <Link to={`/rooms/${_id}`}>
+              <button className="btn btn-primary">See Details</button>
+            </Link>
           </h2>
         </div>
       </div>
