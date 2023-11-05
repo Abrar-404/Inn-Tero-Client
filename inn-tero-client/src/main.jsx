@@ -14,6 +14,7 @@ import Rooms from './Components/Rooms/Rooms';
 import ErrorElements from './Components/ErrorElements/ErrorElements';
 import DiscountDetail from './Components/DiscountDetail/DiscountDetail';
 import Feature from './Components/Feature/Feature';
+import Newsletter from './Components/Newsletter/Newsletter';
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <Rooms></Rooms>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: '/newsletter',
+        element: (
+          <PrivateRoute>
+            <Newsletter></Newsletter>
           </PrivateRoute>
         ),
       },
