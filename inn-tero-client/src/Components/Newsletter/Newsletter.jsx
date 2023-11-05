@@ -1,6 +1,31 @@
 import { TypeAnimation } from 'react-type-animation';
+import Swal from 'sweetalert2';
 
 const Newsletter = () => {
+  const handleSubmit = e => {
+    e.preventDefault();
+
+    const form = e.target;
+    const email = form.email.value;
+    const name = form.name.value;
+    const description = form.description.value;
+
+    Swal.fire({
+      imageUrl: `https://i.ibb.co/H4HnLmL/yippee-yay.gif`,
+      title: 'WOOHOOO!!!! Welcome To The World!!!!',
+      width: 600,
+      padding: '3em',
+      color: '#7CFC00',
+      background: '#fff url()',
+      backdrop: `
+    rgba(0,0,123,0.4)
+    top
+    no-repeat
+  `,
+    });
+    document.getElementById('deleteSubmit').reset();
+  };
+
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
@@ -24,7 +49,11 @@ const Newsletter = () => {
                 repeat={Infinity}
               />
             </div>
-            <form className="card-body">
+            <form
+              id="deleteSubmit"
+              onSubmit={handleSubmit}
+              className="card-body"
+            >
               <div className="flex lg:flex-row flex-col md:flex-col gap-10">
                 <div className="form-control">
                   <label className="label">
