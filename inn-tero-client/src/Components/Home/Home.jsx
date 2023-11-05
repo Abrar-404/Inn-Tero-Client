@@ -1,6 +1,7 @@
 import Banner from '../Banner/Banner';
 import Feature from '../Feature/Feature';
 import Footer from '../Footer/Footer';
+import NewsHome from '../Newsletter/NewsHome';
 import Parallax from '../Parallax/Parallax';
 import Video from '../Video/Video';
 
@@ -11,6 +12,7 @@ const Home = () => {
       <Video></Video>
       <Parallax></Parallax>
       <Feature></Feature>
+      <NewsHome></NewsHome>
       <Footer></Footer>
     </div>
   );
