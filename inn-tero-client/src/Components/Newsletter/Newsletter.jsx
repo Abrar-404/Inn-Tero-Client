@@ -1,9 +1,29 @@
+import { TypeAnimation } from 'react-type-animation';
+
 const Newsletter = () => {
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card flex-shrink-0 w-full shadow-2xl bg-base-100">
+            <div className="text-center text-red-600 text-3xl mt-20 font-bold">
+              <TypeAnimation
+                sequence={[
+                  // Same substring at the start will only be typed once, initially
+                  'Submit',
+                  1000,
+                  'To',
+                  1000,
+                  'Our',
+                  1000,
+                  'Newsletter',
+                  1000,
+                ]}
+                speed={50}
+                style={{ fontSize: '2em' }}
+                repeat={Infinity}
+              />
+            </div>
             <form className="card-body">
               <div className="flex gap-10">
                 <div className="form-control">
