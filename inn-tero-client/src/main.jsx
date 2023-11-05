@@ -12,6 +12,7 @@ import AuthProvider from './Providers/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Rooms from './Components/Rooms/Rooms';
 import ErrorElements from './Components/ErrorElements/ErrorElements';
+import DiscountDetail from './Components/DiscountDetail/DiscountDetail';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>,
+      },
+      {
+        path: '/discountDetails',
+        element: <DiscountDetail></DiscountDetail>,
       },
       {
         path: '/myBookings',
