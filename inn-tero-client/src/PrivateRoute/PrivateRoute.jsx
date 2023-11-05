@@ -11,7 +11,7 @@ const PrivateRoute = ({ children }) => {
       <div className="h-[100vh]">
         <img
           className="text-center mt-40 mx-auto flex justify-center"
-          src="https://i.ibb.co/Vxf5BTC/loader.gif"
+          src="https://i.ibb.co/Kz2Xnfy/bece0c797cb134aefb2cb836578c9249.gif"
         ></img>
       </div>
     );

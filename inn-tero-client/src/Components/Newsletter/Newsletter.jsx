@@ -25,7 +25,7 @@ const Newsletter = () => {
               />
             </div>
             <form className="card-body">
-              <div className="flex gap-10">
+              <div className="flex lg:flex-row flex-col md:flex-col gap-10">
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Name</span>
