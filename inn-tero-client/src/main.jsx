@@ -41,7 +41,6 @@ const router = createBrowserRouter([
       {
         path: '/feature',
         element: <Feature></Feature>,
-        // loader: () => fetch('')
       },
       {
         path: '/myBookings',
