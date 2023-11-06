@@ -34,6 +34,14 @@ const Login = () => {
   `,
         });
         console.log(result.user);
+        const loggedInGoogleUser = result?.user;
+        console.log(loggedInGoogleUser);
+        // const user = { email };
+        axios
+          .post('http://localhost:5000/jwt', loggedInGoogleUser)
+          .then(res => {
+            console.log(res.data);
+          });
         naviGate(location?.state ? location.state : '/');
       })
       .catch(error => {
@@ -51,7 +59,7 @@ const Login = () => {
 
     loginUser(email, password)
       .then(result => {
-        const loggedInUser = result.user;
+        const loggedInUser = result?.user;
         console.log(loggedInUser);
         const user = { email };
         axios.post('http://localhost:5000/jwt', user).then(res => {

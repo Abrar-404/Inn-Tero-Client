@@ -11,7 +11,7 @@ const Navbar = () => {
     userLogOut()
       .then(result => {
         navigate('/');
-        console.log(result.user);
+        console.log(result?.user);
       })
       .catch(error => {
         console.error(error);
