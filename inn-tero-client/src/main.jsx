@@ -17,6 +17,7 @@ import Feature from './Components/Feature/Feature';
 import Newsletter from './Components/Newsletter/Newsletter';
 import RoomDetails from './Components/Rooms/RoomDetails';
 import AddRoom from './Components/AddRoom/AddRoom';
+import Bookings from './Components/Bookings/Bookings';
 
 const router = createBrowserRouter([
   {
@@ -53,12 +54,16 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: '/rooms',
+        path: '/bookings',
         element: (
           <PrivateRoute>
-            <Rooms></Rooms>
+            <Bookings></Bookings>
           </PrivateRoute>
         ),
+      },
+      {
+        path: '/rooms',
+        element: <Rooms></Rooms>,
       },
       {
         path: '/addRoom',
@@ -67,7 +72,6 @@ const router = createBrowserRouter([
             <AddRoom></AddRoom>
           </PrivateRoute>
         ),
-        
       },
       {
         path: '/addRoom/:id',
@@ -81,11 +85,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/rooms/:id',
-        element: (
-          <PrivateRoute>
-            <RoomDetails></RoomDetails>
-          </PrivateRoute>
-        ),
+        element: <RoomDetails></RoomDetails>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/rooms/${params.id}`),
       },

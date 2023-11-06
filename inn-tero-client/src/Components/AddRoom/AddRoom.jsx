@@ -2,6 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { useLoaderData } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../../Providers/AuthProvider';
+import Swal from 'sweetalert2';
 
 const AddRoom = () => {
   const addRoomDet = useLoaderData();
@@ -31,13 +32,28 @@ const AddRoom = () => {
     fetch('http://localhost:5000/addRoom', {
       method: 'POST',
       headers: {
-        'content-type' : 'application/json'
+        'content-type': 'application/json',
       },
-      body: JSON.stringify(add)
+      body: JSON.stringify(add),
     })
       .then(res => res.json())
       .then(data => {
         console.log(data);
+        if (data.insertedId) {
+          Swal.fire({
+            imageUrl: `https://i.ibb.co/H4HnLmL/yippee-yay.gif`,
+            title: 'WOOHOOO!!!! Welcome To The World!!!!',
+            width: 600,
+            padding: '3em',
+            color: '#7CFC00',
+            background: '#fff url()',
+            backdrop: `
+    rgba(0,0,123,0.4)
+    top
+    no-repeat
+  `,
+          });
+        }
       });
   };
 
@@ -70,7 +86,7 @@ const AddRoom = () => {
               onSubmit={handleSubmit}
               className="card-body"
             >
-              <div className="flex lg:flex-row flex-col md:flex-col gap-10">
+              <div className="flex lg:flex-row flex-col md:flex-row gap-10">
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Name</span>
