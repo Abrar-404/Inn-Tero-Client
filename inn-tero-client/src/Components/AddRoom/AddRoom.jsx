@@ -127,6 +127,17 @@ const AddRoom = () => {
                   defaultValue={price}
                 />
                 <label className="label">
+                  <span className="label-text">Title</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Text"
+                  className="input input-bordered"
+                  required
+                  name="text"
+                  defaultValue={title}
+                />
+                <label className="label">
                   <span className="label-text">Date</span>
                 </label>
                 <input
