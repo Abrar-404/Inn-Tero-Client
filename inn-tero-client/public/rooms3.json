@@ -6,10 +6,18 @@
     "price": "20.00",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
     "rooms": [
-      "https://i.ibb.co/QF55h5r/dad-hotel.jpg",
-      "https://i.ibb.co/yd8S3mN/images.jpg",
-      "https://i.ibb.co/w7qg5tv/f1-Ti-KFLDg-Db-Nkf-G9pgjt-P2-Lz-C6yd3tf537qbpcm5.jpg",
-      "https://i.ibb.co/M5WV6xr/caption.jpg"
+      {
+        "img1": "https://i.ibb.co/QF55h5r/dad-hotel.jpg"
+      },
+      {
+        "img2": "https://i.ibb.co/yd8S3mN/images.jpg"
+      },
+      {
+        "img3": "https://i.ibb.co/w7qg5tv/f1-Ti-KFLDg-Db-Nkf-G9pgjt-P2-Lz-C6yd3tf537qbpcm5.jpg"
+      },
+      {
+        "img4": "https://i.ibb.co/M5WV6xr/caption.jpg"
+      }
     ]
   },
   {
@@ -19,10 +27,16 @@
     "price": "20.00",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
     "rooms": [
-      "https://i.ibb.co/1rwjST3/pexels-julie-aagaard-2467285.jpg",
-      "https://i.ibb.co/nrkjy5W/58dc1ea085086828008b4640.webp",
-      "https://i.ibb.co/SrsWvTK/deluxe-harbour-view-room.jpg",
-      "https://i.ibb.co/Sny7jkd/ba6893503c2c5743acf3b1a02b647d533186c635.jpg"
+      {
+        "img1": "https://i.ibb.co/1rwjST3/pexels-julie-aagaard-2467285.jpg"
+      },
+      {
+        "img2": "https://i.ibb.co/nrkjy5W/58dc1ea085086828008b4640.webp"
+      },
+      { "img3": "https://i.ibb.co/SrsWvTK/deluxe-harbour-view-room.jpg" },
+      {
+        "img4": "https://i.ibb.co/Sny7jkd/ba6893503c2c5743acf3b1a02b647d533186c635.jpg"
+      }
     ]
   },
   {
@@ -32,10 +46,18 @@
     "price": "40.00",
     "description": "Experience ultimate luxury in our spacious luxury suite. This suite is designed to provide you with the utmost comfort and elegance. Enjoy stunning views and top-notch amenities during your stay. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "rooms": [
-      "https://i.ibb.co/1qg6Pbq/MOOD-ROOM-SUPERIOR-RSPV-NH-collection-eurobuilding-1167.jpg",
-      "https://i.ibb.co/QPb2rhK/unnamed-8-e1508489447315.webp",
-      "https://i.ibb.co/kBmF5ZW/MOOD-ROOMS-NH-Collection-Eurobuilding-Madrid-3.jpg",
-      "https://i.ibb.co/YN6Sfv9/A-private-cabana-by-the-pool-comes-with-a-loaner-i-Pad-and-theres-even-a-DJ-booth-in-the-8600-a-nigh.webp"
+      {
+        "img1": "https://i.ibb.co/1qg6Pbq/MOOD-ROOM-SUPERIOR-RSPV-NH-collection-eurobuilding-1167.jpg"
+      },
+      {
+        "img2": "https://i.ibb.co/QPb2rhK/unnamed-8-e1508489447315.webp"
+      },
+      {
+        "img3": "https://i.ibb.co/kBmF5ZW/MOOD-ROOMS-NH-Collection-Eurobuilding-Madrid-3.jpg"
+      },
+      {
+        "img4": "https://i.ibb.co/YN6Sfv9/A-private-cabana-by-the-pool-comes-with-a-loaner-i-Pad-and-theres-even-a-DJ-booth-in-the-8600-a-nigh.webp"
+      }
     ]
   },
   {
@@ -45,10 +67,16 @@
     "price": "30.00",
     "description": "Escape to the tranquility of our mountain view cabin. Enjoy the serenity of nature and the beauty of the surrounding mountains. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "rooms": [
-      "https://i.ibb.co/b14qtfk/960x0.webp",
-      "https://i.ibb.co/GnqJftt/246414448.jpg",
-      "https://i.ibb.co/sR5HWWZ/0220w120008cfcyq424-AF-R-960-660-R5-D.webp",
-      "https://i.ibb.co/NxWSjHF/Silvana-Mountain-Hotel-eroeffnet-mit-neuem-Restaurant-und-renovierten-Zimmern-1-front-magnific."
+      {
+        "img1": "https://i.ibb.co/b14qtfk/960x0.webp"
+      },
+      { "img2": "https://i.ibb.co/GnqJftt/246414448.jpg" },
+      {
+        "img3": "https://i.ibb.co/sR5HWWZ/0220w120008cfcyq424-AF-R-960-660-R5-D.webp"
+      },
+      {
+        "img4": "https://i.ibb.co/NxWSjHF/Silvana-Mountain-Hotel-eroeffnet-mit-neuem-Restaurant-und-renovierten-Zimmern-1-front-magnific.jpg"
+      }
     ]
   },
   {
@@ -58,10 +86,16 @@
     "price": "50.00",
     "description": "Step right onto the sandy beach from our beachfront bungalow. Enjoy the sound of the waves and the breathtaking ocean views. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "rooms": [
-      "https://i.ibb.co/YtkTNZV/beach-suite-bungalow-v3425727-1440-1024x683.jpg",
-      "https://i.ibb.co/zPkqQSS/01d-copy-2-920x460.jpg",
-      "https://i.ibb.co/4WMrVZf/nissi-beach-resort-habitacion-1086ef26.jpg",
-      "https://i.ibb.co/myn2QQR/71d800a219dd4b3391665ca4aa7adc25."
+      {
+        "img1": "https://i.ibb.co/YtkTNZV/beach-suite-bungalow-v3425727-1440-1024x683.jpg"
+      },
+      { "img2": "https://i.ibb.co/zPkqQSS/01d-copy-2-920x460.jpg" },
+      {
+        "img3": "https://i.ibb.co/4WMrVZf/nissi-beach-resort-habitacion-1086ef26.jpg"
+      },
+      {
+        "img4": "https://i.ibb.co/myn2QQR/71d800a219dd4b3391665ca4aa7adc25.jpg"
+      }
     ]
   },
   {
@@ -71,10 +105,19 @@
     "price": "45.00",
     "description": "Experience the thrill of the slopes from our cozy ski chalet. Located right next to the ski resort, it's perfect for winter enthusiasts. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "rooms": [
-      "https://i.ibb.co/gFWMfzQ/TELEMMGLPICT000287314270-trans-Nv-BQz-QNjv4-Bqp-Vlber-Wd9-Eg-FPZtc-Li-MQf0-Rf-Wk3-V23-H2268-P-Xk-Pxc.webp",
-      "https://i.ibb.co/mcZVMgJ/Chalet-eastrock-Paragon-Ski-Chalets-1.jpg",
-      "https://i.ibb.co/BsXdhY9/Chalet-Bacchus-Courchevel-Consensio-Living-Room.webp",
-      "https://i.ibb.co/gFWMfzQ/TELEMMGLPICT000287314270-trans-Nv-BQz-QNjv4-Bqp-Vlber-Wd9-Eg-FPZtc-Li-MQf0-Rf-Wk3-V23-H2268-P-Xk-Pxc.webp"
+      {
+        "img1": "https://i.ibb.co/gFWMfzQ/TELEMMGLPICT000287314270-trans-Nv-BQz-QNjv4-Bqp-Vlber-Wd9-Eg-FPZtc-Li-MQf0-Rf-Wk3-V23-H2268-P-Xk-Pxc.webp"
+      },
+      {
+        "img2": "https://i.ibb.co/mcZVMgJ/Chalet-eastrock-Paragon-Ski-Chalets-1.jpg"
+      },
+      {
+        "img3": "https://i.ibb.co/BsXdhY9/Chalet-Bacchus-Courchevel-Consensio-Living-Room.webp"
+      },
+
+      {
+        "img4": "https://i.ibb.co/gFWMfzQ/TELEMMGLPICT000287314270-trans-Nv-BQz-QNjv4-Bqp-Vlber-Wd9-Eg-FPZtc-Li-MQf0-Rf-Wk3-V23-H2268-P-Xk-Pxc.webp"
+      }
     ]
   }
 ]

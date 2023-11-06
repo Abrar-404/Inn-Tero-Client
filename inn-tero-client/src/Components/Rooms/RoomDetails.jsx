@@ -8,7 +8,10 @@ const RoomDetails = () => {
 
   return (
     <div>
-      <img src={img} alt="" />
+      <img src={rooms[0].img1} alt="" />
+      <img src={rooms[1].img2} alt="" />
+      <img src={rooms[2].img3} alt="" />
+      <img src={rooms[3].img4} alt="" />
     </div>
   );
 };
