@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 const AddRoom = () => {
   const addRoomDet = useLoaderData();
 
-  const { title, price, _id, img } = addRoomDet || {};
+  const { title, price, _id, img, description } = addRoomDet || {};
   const { user } = useContext(AuthContext);
 
   const handleSubmit = e => {
@@ -26,6 +26,7 @@ const AddRoom = () => {
       service: title,
       service_id: _id,
       price,
+      description,
     };
     console.log(add);
 
@@ -146,6 +147,17 @@ const AddRoom = () => {
                   className="input input-bordered"
                   required
                   name="date"
+                />
+                <label className="label">
+                  <span className="label-text">Description</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Description"
+                  className="input input-bordered"
+                  required
+                  name="description"
+                  defaultValue={description}
                 />
               </div>
               <div className="form-control mt-6">
