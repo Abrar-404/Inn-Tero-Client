@@ -9,6 +9,7 @@ import Button from '../Button/Button';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from '../../Providers/AuthProvider';
+import axios from 'axios';
 
 const Login = () => {
   const { loginUser, googleSignIn, googleRegister } = useContext(AuthContext);
@@ -50,7 +51,12 @@ const Login = () => {
 
     loginUser(email, password)
       .then(result => {
-        console.log(result);
+        const loggedInUser = result.user;
+        console.log(loggedInUser);
+        const user = { email };
+        axios.post('http://localhost:5000/jwt', user).then(res => {
+          console.log(res.data);
+        });
         Swal.fire({
           imageUrl: `https://i.ibb.co/H4HnLmL/yippee-yay.gif`,
           title: 'WOOHOOO!!!! Welcome To The World!!!!',
