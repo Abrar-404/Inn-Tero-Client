@@ -16,6 +16,7 @@ import DiscountDetail from './Components/DiscountDetail/DiscountDetail';
 import Feature from './Components/Feature/Feature';
 import Newsletter from './Components/Newsletter/Newsletter';
 import RoomDetails from './Components/Rooms/RoomDetails';
+import AddRoom from './Components/AddRoom/AddRoom';
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,25 @@ const router = createBrowserRouter([
             <Rooms></Rooms>
           </PrivateRoute>
         ),
+      },
+      {
+        path: '/addRoom',
+        element: (
+          <PrivateRoute>
+            <AddRoom></AddRoom>
+          </PrivateRoute>
+        ),
+        
+      },
+      {
+        path: '/addRoom/:id',
+        element: (
+          <PrivateRoute>
+            <AddRoom></AddRoom>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/rooms/${params.id}`),
       },
       {
         path: '/rooms/:id',

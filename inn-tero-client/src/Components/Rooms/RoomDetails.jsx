@@ -16,7 +16,7 @@ import 'react-tabs/style/react-tabs.css';
 
 export default function RoomDetails() {
   const roomDetail = useLoaderData();
-  const { feature, rooms, experience } = roomDetail;
+  const { feature, rooms, experience, _id } = roomDetail;
   //   console.log(roomDetail);
   return (
     <>
@@ -54,6 +54,12 @@ export default function RoomDetails() {
           <img className="relative h-full" src={rooms[3].img4} />
         </SwiperSlide>
       </Swiper>
+
+      <div>
+        <Link to={`/addRoom/${_id}`}>
+          <button className="btn btn-primary">Book Now</button>
+        </Link>
+      </div>
 
       <div className="mx-auto lg:items-center">
         <Tabs>
