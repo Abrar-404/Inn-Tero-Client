@@ -13,7 +13,7 @@ const Feature = () => {
 
   return (
     <div>
-      <div className="text-center font-script font-extrabold text-[#aa7474] text-3xl mb-5 mt-20 font-bold">
+      <div className="text-center font-script font-extrabold text-[#aa7474] text-3xl mb-5 mt-20 ">
         <TypeAnimation
           sequence={[
             // Same substring at the start will only be typed once, initially

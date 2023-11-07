@@ -12,7 +12,7 @@ const RoomCard = ({ room }) => {
             className="max-w-[400px]  h-[300px] rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-6xl font-bold font-script">{title}</h1>
+            <h1 className="text-6xl font-bold  font-script">{title}</h1>
             <p className="py-6">{description}</p>
 
             <div className="gap-10 flex items-center">

@@ -19,6 +19,7 @@ import RoomDetails from './Components/Rooms/RoomDetails';
 import AddRoom from './Components/AddRoom/AddRoom';
 import Bookings from './Components/Bookings/Bookings';
 import AboutUs from './Components/AboutUs/AboutUs';
+import UpdateDateFunction from './Components/UpdateDate/UpdateDateFunction';
 
 const router = createBrowserRouter([
   {
@@ -101,6 +102,16 @@ const router = createBrowserRouter([
             <Newsletter></Newsletter>
           </PrivateRoute>
         ),
+      },
+      {
+        path: '/updateDateFunction/:id',
+        element: (
+          <PrivateRoute>
+            <UpdateDateFunction></UpdateDateFunction>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/rooms/${params.id}`),
       },
       {
         path: '/gallery',
