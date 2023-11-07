@@ -1,10 +1,21 @@
-
-
 import Swal from 'sweetalert2';
 
 // eslint-disable-next-line react/prop-types
 const Bookings = ({ booking, setBookings }) => {
-  const { img, service, _id, date, price, description } = booking || {};
+  const {
+    feature,
+    rooms,
+    experience,
+    _id,
+    offer,
+    description,
+    size,
+    price,
+    status,
+    service,
+    date,
+    img,
+  } = booking || {};
 
   const handleDelete = id => {
     Swal.fire({
@@ -59,7 +70,7 @@ const Bookings = ({ booking, setBookings }) => {
           />
           <div>
             <h1 className="text-5xl font-bold">{service}</h1>
-            <p className="py-6">{service}</p>
+            <p className="py-6">{description}</p>
             <div className="gap-10 flex items-center">
               <button
                 onClick={() => handleDelete(_id)}

@@ -6,12 +6,12 @@ import { getAuth } from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_apiKey,
-  authDomain: import.meta.env.VITE_authDomain,
-  projectId: import.meta.env.VITE_projectId,
-  storageBucket: import.meta.env.VITE_storageBucket,
-  messagingSenderId: import.meta.env.VITE_messagingSenderId,
-  appId: import.meta.env.VITE_appId,
+  apiKey: 'AIzaSyB5lzFz_VahHHEF2vuLPYuladq4_yMDCYg',
+  authDomain: 'inn-tero.firebaseapp.com',
+  projectId: 'inn-tero',
+  storageBucket: 'inn-tero.appspot.com',
+  messagingSenderId: '946247325719',
+  appId: '1:946247325719:web:14e6af33e6b08d8ebba452',
 };
 
 // Initialize Firebase

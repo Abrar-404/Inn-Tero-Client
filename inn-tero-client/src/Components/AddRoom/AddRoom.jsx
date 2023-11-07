@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 const AddRoom = () => {
   const addRoomDet = useLoaderData();
 
-  const { title, price, _id, img, description } = addRoomDet || {};
+  const { title, price, _id, img, description, offer, size, status } = addRoomDet || {};
   const { user } = useContext(AuthContext);
 
   const handleSubmit = e => {
@@ -27,6 +27,9 @@ const AddRoom = () => {
       service_id: _id,
       price,
       description,
+      offer,
+      size,
+      status
     };
     console.log(add);
 

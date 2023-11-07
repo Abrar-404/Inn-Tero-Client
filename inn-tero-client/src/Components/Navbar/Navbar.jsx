@@ -20,28 +20,28 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-      <li className=" -mr-[2%]">
+      <li className=" -mr-[2%] font-script text-xl font-extrabold">
         <NavLink to="/">Home</NavLink>
       </li>
 
       {user ? null : (
         <>
-          <li className="">
+          <li className="font-script text-xl font-extrabold">
             <NavLink to="/login">Login</NavLink>
           </li>
-          <li className="">
+          <li className="font-script text-xl font-extrabold">
             <NavLink to="/register">Register</NavLink>
           </li>
-          <li className="">
+          <li className="font-script text-xl font-extrabold">
             <NavLink to="/myBookings">My Bookings</NavLink>
           </li>
-          <li className="">
+          <li className="font-script text-xl font-extrabold">
             <NavLink to="/rooms">Rooms</NavLink>
           </li>
-          <li className="">
+          <li className="font-script text-xl font-extrabold">
             <NavLink to="/gallery">Gallery</NavLink>
           </li>
-          <li className="">
+          <li className="font-script text-xl font-extrabold">
             <NavLink to="/newsletter">Newsletter</NavLink>
           </li>
         </>
@@ -49,16 +49,16 @@ const Navbar = () => {
 
       {user && (
         <>
-          <li className="">
+          <li className="font-script text-xl font-extrabold">
             <NavLink to="/myBookings">My Bookings</NavLink>
           </li>
-          <li className="">
+          <li className="font-script text-xl font-extrabold">
             <NavLink to="/rooms">Rooms</NavLink>
           </li>
-          <li className="">
+          <li className="font-script text-xl font-extrabold">
             <NavLink to="/gallery">Gallery</NavLink>
           </li>
-          <li className="">
+          <li className="font-script text-xl font-extrabold">
             <NavLink to="/newsletter">Newsletter</NavLink>
           </li>
         </>
@@ -70,7 +70,7 @@ const Navbar = () => {
     <div>
       <div className="navbar bg-[#F0E6E7]">
         <div className="navbar-start">
-          <div className="dropdown text-white">
+          <div className="dropdown ">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
