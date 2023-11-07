@@ -16,13 +16,15 @@ const AboutUs = () => {
         />
 
         <div className="font-bold roll-in-blurred-right">
-          <h1 className="lg:text-8xl md:text-6xl text-5xl">Inn-Tero</h1>
+          <h1 className="lg:text-8xl md:text-6xl text-5xl font-script">
+            Inn-Tero
+          </h1>
           <h1 className="lg:text-2xl md:text-xl text-base">
             We Provide You The Luxury
           </h1>
           <h1 className="lg:text-4xl md:text-3xl text-2xl">
             That Nobody <br />
-            <span className="lg:text-9xl md:text-7xl text-6xl text-pink-600 ">
+            <span className="lg:text-9xl md:text-7xl text-6xl font-cursive text-pink-600 ">
               Offered
             </span>
           </h1>
