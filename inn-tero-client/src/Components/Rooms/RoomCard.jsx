@@ -12,12 +12,14 @@ const RoomCard = ({ room }) => {
             className="max-w-[400px]  h-[300px] rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-5xl font-bold">{title}</h1>
+            <h1 className="text-6xl font-bold font-script">{title}</h1>
             <p className="py-6">{description}</p>
 
             <div className="gap-10 flex items-center">
               <Link to={`/rooms/${_id}`}>
-                <button className="btn btn-primary">See Details</button>
+                <button className="button-86" role="button">
+                  See Details
+                </button>
               </Link>
 
               <div className="badge badge-secondary">{status}</div>
