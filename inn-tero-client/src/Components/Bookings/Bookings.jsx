@@ -69,14 +69,19 @@ const Bookings = ({ booking, setBookings }) => {
             className="max-w-[400px]  h-[300px] rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-5xl font-bold">{service}</h1>
-            <p className="py-6">{description}</p>
+            <h1 className="text-5xl font-extrabold font-script">{service}</h1>
+            <p className="py-6 font-lovely font-semibold">{description}</p>
             <div className="gap-10 flex items-center">
               <button
                 onClick={() => handleDelete(_id)}
-                className="btn btn-primary"
+                className="button-86"
+                role="button"
               >
                 Delete
+              </button>
+
+              <button className="button-86" role="button">
+                Update
               </button>
             </div>
           </div>

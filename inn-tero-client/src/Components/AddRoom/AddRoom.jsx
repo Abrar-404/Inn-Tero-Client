@@ -7,7 +7,8 @@ import Swal from 'sweetalert2';
 const AddRoom = () => {
   const addRoomDet = useLoaderData();
 
-  const { title, price, _id, img, description, offer, size, status } = addRoomDet || {};
+  const { title, price, _id, img, description, offer, size, status, service } =
+    addRoomDet || {};
   const { user } = useContext(AuthContext);
 
   const handleSubmit = e => {
@@ -29,36 +30,59 @@ const AddRoom = () => {
       description,
       offer,
       size,
-      status
+      status,
     };
     console.log(add);
 
-    fetch('http://localhost:5000/addRoom', {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify(add),
-    })
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        if (data.insertedId) {
-          Swal.fire({
-            imageUrl: `https://i.ibb.co/H4HnLmL/yippee-yay.gif`,
-            title: 'WOOHOOO!!!! Welcome To The World!!!!',
-            width: 600,
-            padding: '3em',
-            color: '#7CFC00',
-            background: '#fff url()',
-            backdrop: `
-    rgba(0,0,123,0.4)
-    top
-    no-repeat
-  `,
+    Swal.fire({
+      imageUrl: `${img}`,
+      imageWidth: '200px',
+      imageHeight: '100px',
+      title: `<b> ${title}`,
+      html: `
+    <label for="description">Description: ${description}</label> <br>
+    <br>
+    <label for="price"><b>Price: ${price}</label> <br>
+    <br>
+    <label for="date"><b>Date: ${date}</label> <br>
+    <br>
+    <label for="description">Are You Sure?</label>`,
+      text: 'Are You Sure?',
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, Confirm it!',
+    }).then(result => {
+      if (result.isConfirmed) {
+        fetch('http://localhost:5000/addRoom', {
+          method: 'POST',
+          headers: {
+            'content-type': 'application/json',
+          },
+          body: JSON.stringify(add),
+        })
+          .then(res => res.json())
+          .then(data => {
+            console.log(data);
+            if (data.insertedId) {
+              Swal.fire({
+                imageUrl: 'https://i.ibb.co/H4HnLmL/yippee-yay.gif',
+                title: 'WOOHOOO!!!! Welcome To The World!!!!',
+                width: 600,
+                padding: '3em',
+                color: '#7CFC00',
+                background: '#fff url()',
+                backdrop: `
+            rgba(0,0,123,0.4)
+            top
+            no-repeat
+          `,
+              });
+            }
           });
-        }
-      });
+      }
+    });
   };
 
   return (
