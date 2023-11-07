@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import img from '../../assets/Untitled-1.png';
+import { PiFlowArrowDuotone } from 'react-icons/pi';
 
 const Footer = () => {
   return (
@@ -13,6 +15,11 @@ const Footer = () => {
             <br />
             Here to shine your Night
           </p>
+          <Link to="/aboutUs">
+            <button className="btn bg-[#AA7474] text-white">
+              About Us <PiFlowArrowDuotone></PiFlowArrowDuotone>
+            </button>
+          </Link>
         </aside>
         <nav>
           <header className="footer-title text-black">Social</header>

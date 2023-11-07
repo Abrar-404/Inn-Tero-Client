@@ -17,7 +17,7 @@ const MyBookings = () => {
 
   return (
     <div>
-      <h1>bookings: {bookings?.length}</h1>
+      {/* <h1>bookings: {bookings?.length}</h1> */}
       <div>
         {bookings.map(booking => (
           <Bookings

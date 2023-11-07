@@ -18,6 +18,7 @@ import Newsletter from './Components/Newsletter/Newsletter';
 import RoomDetails from './Components/Rooms/RoomDetails';
 import AddRoom from './Components/AddRoom/AddRoom';
 import Bookings from './Components/Bookings/Bookings';
+import AboutUs from './Components/AboutUs/AboutUs';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: '/feature',
         element: <Feature></Feature>,
+      },
+      {
+        path: '/aboutUs',
+        element: <AboutUs></AboutUs>,
       },
       {
         path: '/myBookings',
