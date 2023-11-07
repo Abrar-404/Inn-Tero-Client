@@ -17,8 +17,8 @@ export default function Banner() {
   return (
     <>
       <div className="flex justify-center mt-20">
-        <h1 className="text-3xl font-bold text-black">
-          OUR AVAILABLE <span className="text-red-600"> DISCOUNTS</span>
+        <h1 className="text-4xl font-bold font-cursive">
+          OUR AVAILABLE <span className="text-[#aa7474]"> DISCOUNTS</span>
         </h1>
       </div>
       <Swiper

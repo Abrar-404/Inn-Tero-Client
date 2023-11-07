@@ -1,6 +1,14 @@
 const Gallery = () => {
   return (
     <div>
+      <h1 className="text-center font-bold font-script text-8xl mt-20 mb-32">
+        Visual Your{' '}
+        <span className="text-[#aa7474] font-extrabold text-9xl">
+          {' '}
+          Stayings
+        </span>
+      </h1>
+
       <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-10">
         <img
           className="rounded-lg transform scale-100 hover:scale-110 transition-transform"

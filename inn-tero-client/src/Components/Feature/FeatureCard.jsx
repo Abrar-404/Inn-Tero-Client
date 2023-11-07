@@ -14,7 +14,7 @@ const FeatureCard = ({ feature }) => {
           />
         </figure>
         <div className="card-body ">
-          <h2 className="card-title text-xl">
+          <h2 className="card-title text-xl ">
             {description}
             <div className="badge badge-secondary">Featured</div>
           </h2>
