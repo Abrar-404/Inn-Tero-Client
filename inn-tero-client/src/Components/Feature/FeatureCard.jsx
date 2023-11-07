@@ -5,7 +5,7 @@ const FeatureCard = ({ feature }) => {
   const { img, description } = feature || {};
   return (
     <div>
-      <div className="card scale-in-center shadow-xl">
+      <div className="card scale-in-center shadow-xl ">
         <figure>
           <img
             className="w-[100%] scale-in-center h-[300px]"
