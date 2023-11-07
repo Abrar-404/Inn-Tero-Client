@@ -39,7 +39,7 @@ export default function Banner() {
       >
         <SwiperSlide>
           <img
-            className="relative"
+            className="relative h-full"
             src="https://i.ibb.co/xJsNGwy/df16735c3435dd5ab858dbfffcd60523.jpg"
           />
           <Link to="/discountDetails">

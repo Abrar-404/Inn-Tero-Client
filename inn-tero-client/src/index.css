@@ -1,3 +1,5 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;1,300;1,400;1,500;1,600&family=Poppins:wght@400;500;600;700;800&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,500;1,300;1,400;1,500;1,600&family=Poppins:wght@400;500;600;700;800&family=Shadows+Into+Light&display=swap');

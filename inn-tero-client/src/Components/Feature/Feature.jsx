@@ -32,7 +32,7 @@ const Feature = () => {
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 mx-auto gap-10">
+      <div className="grid grid-cols-1  md:grid-cols-1 lg:grid-cols-3 mx-auto gap-10">
         {features?.map(feature => (
           <FeatureCard key={feature?._id} feature={feature}></FeatureCard>
         ))}

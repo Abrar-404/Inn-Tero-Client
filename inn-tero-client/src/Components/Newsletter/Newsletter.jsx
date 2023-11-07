@@ -1,7 +1,15 @@
 import { TypeAnimation } from 'react-type-animation';
 import Swal from 'sweetalert2';
+import img from '../../assets/banner.png';
 
 const Newsletter = () => {
+  const backBg = {
+    backgroundImage: `url${img}`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: '',
+  };
+
   const handleSubmit = e => {
     e.preventDefault();
 
@@ -28,7 +36,7 @@ const Newsletter = () => {
 
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200">
+      <div style={backBg} className="hero min-h-screen  bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card flex-shrink-0 w-full shadow-2xl bg-base-100">
             <div className="text-center text-red-600 text-3xl mt-20 font-bold">

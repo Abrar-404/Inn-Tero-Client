@@ -1,7 +1,7 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
-import { BsCart3 } from 'react-icons/bs';
 import { AuthContext } from '../../Providers/AuthProvider';
+import img from '../../assets/Untitled-1.png';
 
 const Navbar = () => {
   const { user, userLogOut } = useContext(AuthContext);
@@ -68,7 +68,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-transparent">
+      <div className="navbar bg-[#F0E6E7]">
         <div className="navbar-start">
           <div className="dropdown text-white">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -95,22 +95,18 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/">
-            <img
-              className="w-[120px] h-[40px]"
-              src="https://i.ibb.co/1f6R89x/inn-tero-high-resolution-logo-transparent.png"
-              alt=""
-            />
+            <img className="w-[120px] h-[70px]" src={img} alt="" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <div className="text-white mr-10 text-3xl">
+          {/* <div className="text-white mr-10 text-3xl">
             <NavLink to="/cart">
               <BsCart3></BsCart3>
             </NavLink>
-          </div>
+          </div> */}
           {user?.email ? (
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -139,7 +135,7 @@ const Navbar = () => {
             </div>
           ) : (
             <Link to="/login">
-              <button className="btn btn-primary border-none text-xs text-white bg-[#5616C5]">
+              <button className="btn btn-primary border-none text-xs text-white bg-[#AA7474]">
                 Login
               </button>
             </Link>

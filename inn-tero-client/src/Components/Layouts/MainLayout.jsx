@@ -5,7 +5,7 @@ import Navbar from '../Navbar/Navbar';
 
 const MainLayout = () => {
   // const backBg = {
-  //   backgroundImage: `url(${bg})`,
+  //   backgroundImage: `url(https://i.ibb.co/wzSK443/images.jpg)`,
   //   backgroundSize: 'cover',
   //   backgroundRepeat: 'no-repeat',
   //   backgroundAttachment: '',

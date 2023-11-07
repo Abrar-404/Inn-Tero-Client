@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom';
+import '../Styles/card.css';
 
-const NewsHome = () => {
+export const NewsHome = () => {
   return (
     <div className="">
-      <div className="text-center mt-20 mb-5">
+      <div className="text-center scale-in-center mt-20 mb-5">
         <h1 className="text-2xl font-bold text-black">
           Subscribe to Our Newsletter for Exciting offers, Update and Deals
         </h1>
       </div>
-      <div className="card lg:w-[50%] md:w-[70%] w-[100%] mx-auto shadow-xl">
+      <div className="card lg:w-[50%] scale-in-center md:w-[70%] w-[100%] mx-auto shadow-xl">
         <figure>
           <img
             className="w-[100%] h-[500px]"
@@ -27,5 +28,3 @@ const NewsHome = () => {
     </div>
   );
 };
-
-export default NewsHome;

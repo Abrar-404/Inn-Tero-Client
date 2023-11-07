@@ -16,7 +16,7 @@ import 'react-tabs/style/react-tabs.css';
 
 export default function RoomDetails() {
   const roomDetail = useLoaderData();
-  const { feature, rooms, experience, _id } = roomDetail;
+  const { feature, rooms, experience, _id, img } = roomDetail;
   //   console.log(roomDetail);
   return (
     <>
