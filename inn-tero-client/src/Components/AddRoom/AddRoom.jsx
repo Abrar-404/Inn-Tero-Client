@@ -55,13 +55,16 @@ const AddRoom = () => {
       confirmButtonText: 'Yes, Confirm it!',
     }).then(result => {
       if (result.isConfirmed) {
-        fetch('http://localhost:5000/addRoom', {
-          method: 'POST',
-          headers: {
-            'content-type': 'application/json',
-          },
-          body: JSON.stringify(add),
-        })
+        fetch(
+          'https://inn-tero-server-3843g90ke-abrar-404.vercel.app/addRoom',
+          {
+            method: 'POST',
+            headers: {
+              'content-type': 'application/json',
+            },
+            body: JSON.stringify(add),
+          }
+        )
           .then(res => res.json())
           .then(data => {
             console.log(data);

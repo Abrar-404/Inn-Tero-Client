@@ -38,7 +38,11 @@ const Login = () => {
         console.log(loggedInGoogleUser);
         // const user = { email };
         axios
-          .post('http://localhost:5000/jwt', loggedInGoogleUser, {withCredentials: true})
+          .post(
+            'https://inn-tero-server-3843g90ke-abrar-404.vercel.app/jwt',
+            loggedInGoogleUser,
+            { withCredentials: true }
+          )
           .then(res => {
             console.log(res.data);
           });
@@ -62,14 +66,18 @@ const Login = () => {
         const loggedInUser = result?.user;
         console.log(loggedInUser);
         const user = { email };
-        axios.post('http://localhost:5000/jwt', user, { withCredentials: true })
+        axios
+          .post(
+            'https://inn-tero-server-3843g90ke-abrar-404.vercel.app/jwt',
+            user,
+            { withCredentials: true }
+          )
           .then(res => {
-            console.log(res.data)
+            console.log(res.data);
             if (res.data?.success) {
-              
               naviGate(location?.state ? location.state : '/');
             }
-        });
+          });
         Swal.fire({
           imageUrl: `https://i.ibb.co/H4HnLmL/yippee-yay.gif`,
           title: 'WOOHOOO!!!! Welcome To The World!!!!',

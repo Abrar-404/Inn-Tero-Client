@@ -39,9 +39,12 @@ const Bookings = ({ booking, setBookings }) => {
       confirmButtonText: 'Yes, delete it!',
     }).then(result => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/addRoom/${id}`, {
-          method: 'DELETE',
-        })
+        fetch(
+          `https://inn-tero-server-3843g90ke-abrar-404.vercel.app/addRoom/${id}`,
+          {
+            method: 'DELETE',
+          }
+        )
           .then(res => res.json())
           .then(data => {
             if (data.deletedCount > 0) {

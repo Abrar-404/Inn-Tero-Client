@@ -7,22 +7,26 @@ const Rooms = () => {
   // const [availables, setAvailables] = useState([]);
 
   // useEffect(() => {
-  //   fetch('http://localhost:5000/rooms')
+  //   fetch('https://inn-tero-server-3843g90ke-abrar-404.vercel.app/rooms')
   //     .then(res => res.json())
   //     .then(data => setRooms(data));
   // }, []);
 
   useEffect(() => {
     if (selectedValue === 'low') {
-      fetch('http://localhost:5000/sortedPrice/low')
+      fetch(
+        'https://inn-tero-server-3843g90ke-abrar-404.vercel.app/sortedPrice/low'
+      )
         .then(res => res.json())
         .then(data => setRooms(data));
     } else if (selectedValue === 'high') {
-      fetch('http://localhost:5000/sortedPrice/high')
+      fetch(
+        'https://inn-tero-server-3843g90ke-abrar-404.vercel.app/sortedPrice/high'
+      )
         .then(res => res.json())
         .then(data => setRooms(data));
     } else {
-      fetch('http://localhost:5000/rooms')
+      fetch('https://inn-tero-server-3843g90ke-abrar-404.vercel.app/rooms')
         .then(res => res.json())
         .then(data => setRooms(data));
     }

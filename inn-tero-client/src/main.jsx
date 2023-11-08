@@ -87,13 +87,17 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/rooms/${params.id}`),
+          fetch(
+            `https://inn-tero-server-3843g90ke-abrar-404.vercel.app/rooms/${params.id}`
+          ),
       },
       {
         path: '/rooms/:id',
         element: <RoomDetails></RoomDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/rooms/${params.id}`),
+          fetch(
+            `https://inn-tero-server-3843g90ke-abrar-404.vercel.app/rooms/${params.id}`
+          ),
       },
       {
         path: '/newsletter',
@@ -111,7 +115,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/rooms/${params.id}`),
+          fetch(
+            `https://inn-tero-server-3843g90ke-abrar-404.vercel.app/rooms/${params.id}`
+          ),
       },
       {
         path: '/gallery',
