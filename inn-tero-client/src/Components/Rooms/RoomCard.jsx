@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const RoomCard = ({ room }) => {
-  const { img, description, _id, title, status } = room || {};
+  const { img, description, _id, title, status, price } = room || {};
 
   return (
     <div>
@@ -14,6 +14,9 @@ const RoomCard = ({ room }) => {
           <div>
             <h1 className="text-6xl font-bold  font-script">{title}</h1>
             <p className="py-6">{description}</p>
+            <h1 className="text-xl font-bold mb-5 font-script">
+              Price: ${price}
+            </h1>
 
             <div className="gap-10 flex items-center">
               <Link to={`/rooms/${_id}`}>

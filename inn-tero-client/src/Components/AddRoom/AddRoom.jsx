@@ -87,7 +87,7 @@ const AddRoom = () => {
 
   return (
     <div>
-      <h1>Add Room : {title}</h1>
+      {/* <h1>Add Room : {title}</h1> */}
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card flex-shrink-0 w-full shadow-2xl bg-base-100">
