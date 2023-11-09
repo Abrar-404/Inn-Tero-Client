@@ -88,7 +88,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://inn-tero-server-3843g90ke-abrar-404.vercel.app/rooms/${params.id}`
+            `https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/rooms/${params.id}`
           ),
       },
       {
@@ -96,7 +96,7 @@ const router = createBrowserRouter([
         element: <RoomDetails></RoomDetails>,
         loader: ({ params }) =>
           fetch(
-            `https://inn-tero-server-3843g90ke-abrar-404.vercel.app/rooms/${params.id}`
+            `https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/rooms/${params.id}`
           ),
       },
       {
@@ -116,7 +116,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://inn-tero-server-3843g90ke-abrar-404.vercel.app/rooms/${params.id}`
+            `https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/rooms/${params.id}`
           ),
       },
       {

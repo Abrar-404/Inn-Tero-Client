@@ -56,7 +56,7 @@ const AddRoom = () => {
     }).then(result => {
       if (result.isConfirmed) {
         fetch(
-          'https://inn-tero-server-3843g90ke-abrar-404.vercel.app/addRoom',
+          'https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/addRoom',
           {
             method: 'POST',
             headers: {
