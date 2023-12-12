@@ -13,7 +13,13 @@ const Home = () => {
     <div className="space-y-10">
       <BannerUp></BannerUp>
       <Banner></Banner>
-      <Timeline></Timeline>
+      <div className="flex justify-center mt-20">
+        <h1 className="text-4xl font-bold font-cursive">
+          Special Services{' '}
+          <span className="text-[#aa7474]"> We Are Providing</span>
+        </h1>
+        <Timeline></Timeline>
+      </div>
       <div>
         <h1 className="text-center mt-10 text-5xl text-[#aa7474] font-cursive font-bold mb-10">
           The Hotel You Seek
