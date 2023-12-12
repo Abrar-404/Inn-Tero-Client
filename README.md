@@ -7,6 +7,11 @@
 [Server-side Link](https://github.com/Abrar-404/Inn-Tero-Server) <br>
 
 
+# Unique Features
+- There is a section of timelines which shows the special services that we are providing <br> <br>
+- There is a exciting gallery route in the navbar which shows the majestic rooms and halls we are offering <br> <br>
+- Also there is a newsletter section by which the customers can send their feedback to us <br> <br>
+
 # Features of this project
 - This is a dynamic project where there is a navbar which contains 5 routes <br> <br>
 - The cards which are shown in this project is dynamic which is related to MongoDB. It means the data/cards are coming from MongoDB database. <br> <br>
@@ -17,6 +22,13 @@
 - There is a parallex in the homepage which makes the UI more attractive as well as a video shown upwards the parallex in the homepage. <br> <br>
 - There is a section named Gallery in the routes on navbar which contains a photo gallery of rooms
 
+
+# Unique Technologies
+- Framer Motion
+- Material UI
+- react type animation
+- react rating
+- react responsive masonery
 
 
 # Technologies used in this project
