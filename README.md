@@ -12,7 +12,7 @@
 - There is a exciting gallery route in the navbar which shows the majestic rooms and halls we are offering <br> <br>
 - Also there is a newsletter section by which the customers can send their feedback to us <br> <br>
 
-# Features of this project
+# Other Features of this project
 - This is a dynamic project where there is a navbar which contains 5 routes <br> <br>
 - The cards which are shown in this project is dynamic which is related to MongoDB. It means the data/cards are coming from MongoDB database. <br> <br>
 - There is a route named Rooms in the navbar and there are six cards showing the rooms available <br> <br>
