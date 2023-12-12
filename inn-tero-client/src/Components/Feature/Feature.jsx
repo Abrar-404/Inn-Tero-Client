@@ -6,7 +6,7 @@ const Feature = () => {
   const [features, setFeatures] = useState([]);
 
   useEffect(() => {
-    fetch('https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/feature')
+    fetch('https://inn-tero-server.vercel.app/feature')
       .then(res => res.json())
       .then(data => setFeatures(data));
   }, []);

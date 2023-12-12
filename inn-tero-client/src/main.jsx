@@ -20,6 +20,7 @@ import AddRoom from './Components/AddRoom/AddRoom';
 import Bookings from './Components/Bookings/Bookings';
 import AboutUs from './Components/AboutUs/AboutUs';
 import UpdateDateFunction from './Components/UpdateDate/UpdateDateFunction';
+import UpdateBooking from './Components/Bookings/UpdateBooking';
 
 const router = createBrowserRouter([
   {
@@ -87,17 +88,23 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(
-            `https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/rooms/${params.id}`
-          ),
+          fetch(`https://inn-tero-server.vercel.app/rooms/${params.id}`),
+      },
+      {
+        path: '/addRoomUpdate/:id',
+        element: (
+          <PrivateRoute>
+            <UpdateBooking />
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`https://inn-tero-server.vercel.app/addRoom/${params.id}`),
       },
       {
         path: '/rooms/:id',
         element: <RoomDetails></RoomDetails>,
         loader: ({ params }) =>
-          fetch(
-            `https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/rooms/${params.id}`
-          ),
+          fetch(`https://inn-tero-server.vercel.app/rooms/${params.id}`),
       },
       {
         path: '/newsletter',
@@ -115,9 +122,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(
-            `https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/rooms/${params.id}`
-          ),
+          fetch(`https://inn-tero-server.vercel.app/rooms/${params.id}`),
       },
       {
         path: '/gallery',

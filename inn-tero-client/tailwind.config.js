@@ -9,7 +9,6 @@ module.exports = {
         sans: ['Poppins', 'sans-serif'],
         cursive: ['Satisfy', 'cursive'],
         script: ['Dancing Script', 'cursive'],
-        
       },
     },
   },

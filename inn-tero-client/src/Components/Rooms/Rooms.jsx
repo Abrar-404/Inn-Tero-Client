@@ -1,3 +1,29 @@
+// import { useEffect, useState } from 'react';
+// import RoomCard from './RoomCard';
+
+// const Rooms = () => {
+//   const [rooms, setRooms] = useState([]);
+
+//   useEffect(() => {
+//     fetch('https://inn-tero-server.vercel.app/rooms')
+//       .then(res => res.json())
+//       .then(data => setRooms(data));
+//   }, []);
+
+//   return (
+//     <div>
+//       {/* <h1>Rooms : {rooms?.length}</h1> */}
+//       <div>
+//         {rooms?.map(room => (
+//           <RoomCard key={room?._id} room={room}></RoomCard>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Rooms;
+
 import { useEffect, useState } from 'react';
 import RoomCard from './RoomCard';
 
@@ -7,26 +33,22 @@ const Rooms = () => {
   // const [availables, setAvailables] = useState([]);
 
   // useEffect(() => {
-  //   fetch('https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/rooms')
+  //   fetch('https://inn-tero-server.vercel.app/rooms')
   //     .then(res => res.json())
   //     .then(data => setRooms(data));
   // }, []);
 
   useEffect(() => {
     if (selectedValue === 'low') {
-      fetch(
-        'https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/sortedPrice/low'
-      )
+      fetch('https://inn-tero-server.vercel.app/sortedPrice/low')
         .then(res => res.json())
         .then(data => setRooms(data));
     } else if (selectedValue === 'high') {
-      fetch(
-        'https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/sortedPrice/high'
-      )
+      fetch('https://inn-tero-server.vercel.app/sortedPrice/high')
         .then(res => res.json())
         .then(data => setRooms(data));
     } else {
-      fetch('https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/rooms')
+      fetch('https://inn-tero-server.vercel.app/rooms')
         .then(res => res.json())
         .then(data => setRooms(data));
     }

@@ -38,11 +38,9 @@ const Login = () => {
         console.log(loggedInGoogleUser);
         // const user = { email };
         axios
-          .post(
-            'https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/jwt',
-            loggedInGoogleUser,
-            { withCredentials: true }
-          )
+          .post('https://inn-tero-server.vercel.app/jwt', loggedInGoogleUser, {
+            withCredentials: true,
+          })
           .then(res => {
             console.log(res.data);
           });
@@ -67,11 +65,9 @@ const Login = () => {
         console.log(loggedInUser);
         const user = { email };
         axios
-          .post(
-            'https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/jwt',
-            user,
-            { withCredentials: true }
-          )
+          .post('https://inn-tero-server.vercel.app/jwt', user, {
+            withCredentials: true,
+          })
           .then(res => {
             console.log(res.data);
             if (res.data?.success) {

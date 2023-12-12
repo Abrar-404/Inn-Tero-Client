@@ -1,17 +1,30 @@
 import { TypeAnimation } from 'react-type-animation';
 import { useLoaderData } from 'react-router-dom';
-import { useContext } from 'react';
-import { AuthContext } from '../../Providers/AuthProvider';
-import Swal from 'sweetalert2';
-import React, { useState, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
+
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css'; // Import calendar styles
+import { AuthContext } from '../../Providers/AuthProvider';
+import Swal from 'sweetalert2';
 
-const AddRoom = () => {
+const UpdateBooking = () => {
   const addRoomDet = useLoaderData();
 
-  const { title, price, _id, img, description, offer, size, status, service } =
-    addRoomDet || {};
+  const {
+    title,
+    customerName,
+    price,
+    _id,
+    service_id,
+    img,
+    date,
+    description,
+    offer,
+    size,
+    status,
+    service,
+  } = addRoomDet;
+
   const { user } = useContext(AuthContext);
 
   const handleSubmit = e => {
@@ -21,8 +34,6 @@ const AddRoom = () => {
     const email = form.email.value;
     const price = form.price.value;
     const date = form.date.value;
-
-    // Check if the selected date is already booked
     if (bookedDates.includes(date)) {
       Swal.fire({
         icon: 'error',
@@ -31,34 +42,34 @@ const AddRoom = () => {
       });
       return;
     }
-
     const add = {
       customerName: name,
       email,
       img,
       date,
-      service: title,
-      service_id: _id,
+      service,
+
       price,
       description,
       offer,
       size,
       status,
     };
+    console.log(add);
 
     Swal.fire({
       imageUrl: `${img}`,
       imageWidth: '200px',
       imageHeight: '100px',
-      title: `<b> ${title}`,
+      title: `<b> ${service}`,
       html: `
-      <label for="description">Description: ${description}</label> <br>
-      <br>
-      <label for="price"><b>Price: ${price}</label> <br>
-      <br>
-      <label for="date"><b>Date: ${date}</label> <br>
-      <br>
-      <label for="description">Are You Sure?</label>`,
+    <label for="description">Description: ${description}</label> <br>
+    <br>
+    <label for="price"><b>Price: ${price}</label> <br>
+    <br>
+    <label for="date"><b>Date: ${date}</label> <br>
+    <br>
+    <label for="description">Are You Sure?</label>`,
       text: 'Are You Sure?',
       icon: 'question',
       showCancelButton: true,
@@ -67,8 +78,8 @@ const AddRoom = () => {
       confirmButtonText: 'Yes, Confirm it!',
     }).then(result => {
       if (result.isConfirmed) {
-        fetch('https://inn-tero-server.vercel.app/addRoom', {
-          method: 'POST',
+        fetch(`https://inn-tero-server.vercel.app/addRoom/${user?.email}`, {
+          method: 'PATCH',
           headers: {
             'content-type': 'application/json',
           },
@@ -77,7 +88,7 @@ const AddRoom = () => {
           .then(res => res.json())
           .then(data => {
             console.log(data);
-            if (data.insertedId) {
+            if (data.modifiedCount) {
               Swal.fire({
                 imageUrl: 'https://i.ibb.co/H4HnLmL/yippee-yay.gif',
                 title: 'WOOHOOO!!!! Welcome To The World!!!!',
@@ -86,10 +97,10 @@ const AddRoom = () => {
                 color: '#7CFC00',
                 background: '#fff url()',
                 backdrop: `
-              rgba(0,0,123,0.4)
-              top
-              no-repeat
-            `,
+            rgba(0,0,123,0.4)
+            top
+            no-repeat
+          `,
               });
             }
           });
@@ -101,13 +112,14 @@ const AddRoom = () => {
 
   useEffect(() => {
     // Fetch booked dates for the current room using the service_id
-    fetch(`https://inn-tero-server.vercel.app/getBookedDates?service_id=${_id}`)
+    fetch(
+      `https://inn-tero-server.vercel.app/getBookedDates?service_id=${service_id}`
+    )
       .then(response => response.json())
       .then(data => {
         setBookedDates(data.bookedDates);
       });
-  }, [_id]); // Fetch booked dates whenever the _id changes
-
+  }, [service_id]); // Fetch booked dates whenever the _id changes
   return (
     <div>
       <h1>Add Room : {title}</h1>
@@ -138,27 +150,25 @@ const AddRoom = () => {
               className="card-body"
             >
               <div className="flex lg:flex-row flex-col md:flex-row gap-10">
-                <div className="form-control w-full">
+                <div className="form-control">
                   <label className="label">
                     <span className="label-text">Name</span>
                   </label>
                   <input
                     type="text"
-                    placeholder="Name"
-                    defaultValue={user?.displayName}
+                    value={customerName}
                     className="input input-bordered"
                     required
                     name="name"
                   />
                 </div>
-                <div className="form-control w-full">
+                <div className="form-control">
                   <label className="label">
                     <span className="label-text">Email</span>
                   </label>
                   <input
                     type="email"
-                    placeholder="email"
-                    defaultValue={user?.email}
+                    value={user?.email}
                     className="input input-bordered"
                     required
                     name="email"
@@ -171,11 +181,21 @@ const AddRoom = () => {
                 </label>
                 <input
                   type="number"
-                  placeholder="Price"
                   className="input input-bordered"
                   required
                   name="price"
-                  defaultValue={price}
+                  value={price}
+                />
+
+                <label className="label">
+                  <span className="label-text">Date</span>
+                </label>
+                <input
+                  type="date"
+                  defaultValue={date}
+                  className="input input-bordered"
+                  required
+                  name="date"
                 />
                 <label className="label">
                   <span className="label-text">Title</span>
@@ -186,28 +206,17 @@ const AddRoom = () => {
                   className="input input-bordered"
                   required
                   name="text"
-                  defaultValue={title}
-                />
-                <label className="label">
-                  <span className="label-text">Date</span>
-                </label>
-                <input
-                  type="date"
-                  placeholder="Date"
-                  className="input input-bordered"
-                  required
-                  name="date"
+                  value={service}
                 />
                 <label className="label">
                   <span className="label-text">Description</span>
                 </label>
                 <input
                   type="text"
-                  placeholder="Description"
                   className="input input-bordered"
                   required
                   name="description"
-                  defaultValue={description}
+                  value={description}
                 />
               </div>
               <div className="form-control mt-6">
@@ -252,4 +261,4 @@ const AddRoom = () => {
   );
 };
 
-export default AddRoom;
+export default UpdateBooking;

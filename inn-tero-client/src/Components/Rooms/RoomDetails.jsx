@@ -1,19 +1,21 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-import '../Styles/button.css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "../Styles/button.css";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
-import '../Banner/banner.css';
+import "../Banner/banner.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
-import { Link, useLoaderData } from 'react-router-dom';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+import { EffectCoverflow, Pagination } from "swiper/modules";
+import { Link, useLoaderData } from "react-router-dom";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
+import AddReviews from "./AddReviews";
+import Reviews from "./Reviews";
 
 export default function RoomDetails() {
   const roomDetail = useLoaderData();
@@ -37,10 +39,10 @@ export default function RoomDetails() {
         </h1>
       </div>
       <Swiper
-        effect={'coverflow'}
+        effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={'auto'}
+        slidesPerView={"auto"}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -111,6 +113,12 @@ export default function RoomDetails() {
             Book Now
           </button>
         </Link>
+        <button className="button-86" role="button">
+          <AddReviews id={_id} />
+        </button>
+      </div>
+      <div  >
+        <Reviews id={_id} />
       </div>
 
       <div className="mx-auto lg:items-center"></div>

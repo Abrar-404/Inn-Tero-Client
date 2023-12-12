@@ -7,7 +7,7 @@ const MyBookings = () => {
   const { user } = useContext(AuthContext);
   const [bookings, setBookings] = useState([]);
 
-  const url = `https://inn-tero-server-jii5q6o57-abrar-404.vercel.app/addRoom?email=${user.email}`;
+  const url = `https://inn-tero-server.vercel.app/addRoom?email=${user.email}`;
 
   useEffect(() => {
     axios.get(url, { withCredentials: true }).then(res => {
