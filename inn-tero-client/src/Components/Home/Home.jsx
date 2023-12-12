@@ -13,8 +13,8 @@ const Home = () => {
     <div className="space-y-10">
       <BannerUp></BannerUp>
       <Banner></Banner>
-      <div className="flex justify-center mt-20">
-        <h1 className="text-4xl font-bold font-cursive">
+      <div className="mt-20">
+        <h1 className="text-center mt-10 text-5xl font-cursive font-bold mb-10">
           Special Services{' '}
           <span className="text-[#aa7474]"> We Are Providing</span>
         </h1>

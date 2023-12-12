@@ -3,7 +3,7 @@ const Timeline = () => {
     <div>
       <ul className="timeline timeline-vertical">
         <li>
-          <div className="timeline-start font-bold font-cursive timeline-box">
+          <div className="timeline-start font-extrabold font-lovely timeline-box">
             Resort
           </div>
           <div className="timeline-middle">
@@ -38,14 +38,14 @@ const Timeline = () => {
               />
             </svg>
           </div>
-          <div className="timeline-end font-bold font-cursive timeline-box">
+          <div className="timeline-end font-extrabold font-lovely timeline-box">
             Function Hall
           </div>
           <hr className="bg-primary" />
         </li>
         <li>
           <hr className="bg-primary" />
-          <div className="timeline-start font-bold font-cursive timeline-box">
+          <div className="timeline-start font-extrabold font-lovely timeline-box">
             Rooms (Holiday Special)
           </div>
           <div className="timeline-middle">
@@ -80,14 +80,14 @@ const Timeline = () => {
               />
             </svg>
           </div>
-          <div className="timeline-end font-bold font-cursive timeline-box">
+          <div className="timeline-end font-extrabold font-lovely timeline-box">
             Rooms (For staying)
           </div>
           <hr />
         </li>
         <li>
           <hr />
-          <div className="timeline-start font-bold font-cursive timeline-box">
+          <div className="timeline-start font-extrabold font-lovely timeline-box">
             Dine Arrangement
           </div>
           <div className="timeline-middle">
