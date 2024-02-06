@@ -13,12 +13,11 @@ import CarouselSlider2 from './../Slider/CarouselSlider2';
 const Home = () => {
   return (
     <div className="space-y-10">
-      <BannerUp></BannerUp>
-      <Banner></Banner>
-
       <div>
         <CarouselSlider2></CarouselSlider2>
       </div>
+      <BannerUp></BannerUp>
+      <Banner></Banner>
 
       <div className="mt-20">
         <h1 className="text-center mt-10 text-5xl font-cursive font-bold mb-10">
