@@ -1,17 +1,18 @@
-import { useEffect } from "react";
-import '../Styles/slider.css'
+import { useEffect } from 'react';
+import '../Styles/slider.css';
+import '../Styles/sliderbtn.css';
+import { IoIosArrowForward } from 'react-icons/io';
 
-import img1 from '../../assets/img1.png'
-import img2 from '../../assets/img2.png'
-import img3 from '../../assets/img3.png'
-import img4 from '../../assets/img4.png'
-import img5 from '../../assets/img5.png'
-import img6 from '../../assets/img6.png'
+import img1 from '../../assets/img1.png';
+import img2 from '../../assets/img2.png';
+import img3 from '../../assets/img3.png';
+import img4 from '../../assets/img4.png';
+import img5 from '../../assets/img5.png';
+import img6 from '../../assets/img6.png';
 
-import image from '../../assets/banner.png'
+import image from '../../assets/banner.png';
 
 const CarouselSlider2 = () => {
-
   useEffect(() => {
     const nextButton = document.getElementById('next');
     const prevButton = document.getElementById('prev');

@@ -344,7 +344,7 @@ header nav a {
   font-family: monospace;
   border: 1px solid #5555;
   font-size: large;
-  bottom: 20%;
+  bottom: 230px;
   left: 10%;
 }
 #next {
@@ -438,5 +438,30 @@ header nav a {
     display: flex;
     width: max-content;
     float: right;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .arrows {
+    position: absolute;
+    bottom: 100px;
+    width: 1140px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 425px) {
+  .arrows {
+    position: absolute;
+    bottom: 100px;
+    width: 1140px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
