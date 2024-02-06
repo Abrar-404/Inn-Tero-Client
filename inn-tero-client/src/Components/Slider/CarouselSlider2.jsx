@@ -8,6 +8,7 @@ import img4 from '../../assets/img4.png'
 import img5 from '../../assets/img5.png'
 import img6 from '../../assets/img6.png'
 
+import image from '../../assets/banner.png'
 
 const CarouselSlider2 = () => {
 
@@ -64,7 +65,7 @@ const CarouselSlider2 = () => {
       <div class="carou">
         <div class="list">
           <div class="item">
-            <img src={img1} alt="" />
+            <img src={image} alt="" />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
@@ -116,7 +117,7 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={img2} alt="" />
+            <img src={image} alt="" />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
@@ -168,7 +169,7 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={img3} alt="" />
+            <img src={image} alt="" />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
@@ -220,7 +221,7 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={img4} alt="" />
+            <img src={image} alt="" />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
@@ -272,7 +273,7 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={img5} alt="" />
+            <img src={image} alt="" />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
@@ -324,7 +325,7 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={img5} alt="" />
+            <img src={image} alt="" />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
