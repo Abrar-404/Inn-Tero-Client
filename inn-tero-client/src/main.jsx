@@ -88,7 +88,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/rooms/${params.id}`),
+          fetch(`https://inn-tero.web.app/rooms/${params.id}`),
       },
       {
         path: '/addRoomUpdate/:id',
@@ -98,13 +98,13 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/addRoom/${params.id}`),
+          fetch(`https://inn-tero.web.app/addRoom/${params.id}`),
       },
       {
         path: '/rooms/:id',
         element: <RoomDetails></RoomDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/rooms/${params.id}`),
+          fetch(`https://inn-tero.web.app/rooms/${params.id}`),
       },
       {
         path: '/newsletter',
@@ -122,7 +122,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/rooms/${params.id}`),
+          fetch(`https://inn-tero.web.app/rooms/${params.id}`),
       },
       {
         path: '/gallery',

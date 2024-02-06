@@ -38,7 +38,7 @@ const Login = () => {
         console.log(loggedInGoogleUser);
         // const user = { email };
         axios
-          .post('http://localhost:5000/jwt', loggedInGoogleUser, {
+          .post('https://inn-tero.web.app/jwt', loggedInGoogleUser, {
             withCredentials: true,
           })
           .then(res => {
@@ -65,7 +65,7 @@ const Login = () => {
         console.log(loggedInUser);
         const user = { email };
         axios
-          .post('http://localhost:5000/jwt', user, {
+          .post('https://inn-tero.web.app/jwt', user, {
             withCredentials: true,
           })
           .then(res => {

@@ -13,7 +13,7 @@ const MainLayout = () => {
   return (
     <div
       // style={backBg}
-      className="mx-auto lg:max-w-[1400px] md:max-w-[768px] max-w-[425px]"
+      className=""
     >
       <Navbar></Navbar>
       <Outlet></Outlet>

@@ -67,7 +67,7 @@ const AddRoom = () => {
       confirmButtonText: 'Yes, Confirm it!',
     }).then(result => {
       if (result.isConfirmed) {
-        fetch('http://localhost:5000/addRoom', {
+        fetch('https://inn-tero.web.app/addRoom', {
           method: 'POST',
           headers: {
             'content-type': 'application/json',
@@ -101,7 +101,7 @@ const AddRoom = () => {
 
   useEffect(() => {
     // Fetch booked dates for the current room using the service_id
-    fetch(`http://localhost:5000/getBookedDates?service_id=${_id}`)
+    fetch(`https://inn-tero.web.app/getBookedDates?service_id=${_id}`)
       .then(response => response.json())
       .then(data => {
         setBookedDates(data.bookedDates);

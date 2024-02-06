@@ -5,7 +5,7 @@
 //   const [rooms, setRooms] = useState([]);
 
 //   useEffect(() => {
-//     fetch('http://localhost:5000/rooms')
+//     fetch('https://inn-tero.web.app/rooms')
 //       .then(res => res.json())
 //       .then(data => setRooms(data));
 //   }, []);
@@ -33,22 +33,22 @@ const Rooms = () => {
   // const [availables, setAvailables] = useState([]);
 
   // useEffect(() => {
-  //   fetch('http://localhost:5000/rooms')
+  //   fetch('https://inn-tero.web.app/rooms')
   //     .then(res => res.json())
   //     .then(data => setRooms(data));
   // }, []);
 
   useEffect(() => {
     if (selectedValue === 'low') {
-      fetch('http://localhost:5000/sortedPrice/low')
+      fetch('https://inn-tero.web.app/sortedPrice/low')
         .then(res => res.json())
         .then(data => setRooms(data));
     } else if (selectedValue === 'high') {
-      fetch('http://localhost:5000/sortedPrice/high')
+      fetch('https://inn-tero.web.app/sortedPrice/high')
         .then(res => res.json())
         .then(data => setRooms(data));
     } else {
-      fetch('http://localhost:5000/rooms')
+      fetch('https://inn-tero.web.app/rooms')
         .then(res => res.json())
         .then(data => setRooms(data));
     }
