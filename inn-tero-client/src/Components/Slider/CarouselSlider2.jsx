@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import '../Styles/slider.css';
 import '../Styles/sliderbtn.css';
 import { IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowBack } from 'react-icons/io';
 
 import img1 from '../../assets/img1.png';
 import img2 from '../../assets/img2.png';
@@ -377,9 +378,72 @@ const CarouselSlider2 = () => {
             </div>
           </div>
         </div>
+
         <div class="arrows">
-          <button id="prev"></button>
-          <button id="next"></button>
+          <button
+            id="prev"
+            className="rounded-full border-2 py-3 px-3 border-gray-800"
+            style={{ transition: 'transform 0.3s ease' }}
+            onMouseEnter={e => (e.target.style.transform = 'translateX(-10px)')}
+            onMouseLeave={e => (e.target.style.transform = 'translateX(0)')}
+          >
+            <span className="rounded-full text-2xl">
+              {' '}
+              <IoIosArrowBack></IoIosArrowBack>
+            </span>
+          </button>
+          <button
+            id="next"
+            className="rounded-full border-2 py-3 px-3 border-gray-800"
+            style={{ transition: 'transform 0.3s ease' }}
+            onMouseEnter={e => (e.target.style.transform = 'translateX(10px)')}
+            onMouseLeave={e => (e.target.style.transform = 'translateX(0)')}
+          >
+            <span className="rounded-full text-2xl">
+              <IoIosArrowForward></IoIosArrowForward>
+            </span>
+          </button>
+
+          {/* <div class="cont">
+            <div className='border-2 rounded-full border-gray-700'>
+              <button class="butt" id="prev"></button>
+              <span class="arrow first">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </span>
+              <span class="arrow second">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </span>
+              <span class="arrow third">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div class="cont">
+            <button class="butt" id="next"></button>
+            <span class="arrow first">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+            </span>
+            <span class="arrow second">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+            </span>
+            <span class="arrow third">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+              </svg>
+            </span>
+          </div> */}
+
           <button id="back">See All &#8599</button>
         </div>
       </div>

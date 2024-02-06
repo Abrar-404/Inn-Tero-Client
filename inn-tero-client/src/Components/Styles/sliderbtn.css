@@ -7,12 +7,13 @@
   cursor: pointer;
   background: none;
   border: none;
-  border-radius: 8px;
-  padding: .5em 1.5em;
+  /* border-radius: 8px; */
+  padding: 0.5em 1.5em;
   font-size: 20px;
   font-weight: 600;
   color: #7f5af0;
-  transition: all .3s ease;
+  margin-top: 230px;
+  transition: all 0.3s ease;
 }
 
 .arrow {
@@ -20,28 +21,80 @@
   position: absolute;
   pointer-events: none;
   width: 24px;
+  margin-top: 210px;
   right: 0;
-  top: 25%;
-  transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* top: 25%; */
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .butt:hover {
   letter-spacing: 2px;
 }
 
-.butt:hover ~.second {
-  opacity: .66;
+.butt:hover ~ .second {
+  opacity: 0.66;
   right: -20px;
   transition-delay: 50ms;
 }
 
-.butt:hover ~.third {
-  opacity: .33;
+.butt:hover ~ .third {
+  opacity: 0.33;
   right: -40px;
   transition-delay: 100ms;
 }
 
-.second, 
+.second,
 .third {
   opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+.butt {
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 1.5em;
+  font-size: 20px;
+  font-weight: 600;
+  color: #7f5af0;
+  margin-top: 260px;
+  transition: all 0.3s ease;
+}
+
+.arrow {
+  fill: #94a1b2;
+  position: absolute;
+  pointer-events: none;
+  width: 24px;
+  margin-top: 210px;
+  right: 0;
+  /* top: 25%; */
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+}
+@media only screen and (max-width: 425px) {
+.butt {
+  cursor: pointer;
+  background: none;
+  border: none;
+  /* border-radius: 8px; */
+  padding: 0.5em 1.5em;
+  font-size: 20px;
+  font-weight: 600;
+  color: #7f5af0;
+  margin-top: 230px;
+  transition: all 0.3s ease;
+}
+
+.arrow {
+  fill: #94a1b2;
+  position: absolute;
+  pointer-events: none;
+  width: 24px;
+  margin-top: 210px;
+  right: 0;
+  /* top: 25%; */
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
 }
