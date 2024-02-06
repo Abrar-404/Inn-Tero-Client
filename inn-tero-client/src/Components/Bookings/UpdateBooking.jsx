@@ -78,7 +78,7 @@ const UpdateBooking = () => {
       confirmButtonText: 'Yes, Confirm it!',
     }).then(result => {
       if (result.isConfirmed) {
-        fetch(`https://inn-tero-server.vercel.app/addRoom/${user?.email}`, {
+        fetch(`http://localhost:5000/addRoom/${user?.email}`, {
           method: 'PATCH',
           headers: {
             'content-type': 'application/json',
@@ -112,9 +112,7 @@ const UpdateBooking = () => {
 
   useEffect(() => {
     // Fetch booked dates for the current room using the service_id
-    fetch(
-      `https://inn-tero-server.vercel.app/getBookedDates?service_id=${service_id}`
-    )
+    fetch(`http://localhost:5000/getBookedDates?service_id=${service_id}`)
       .then(response => response.json())
       .then(data => {
         setBookedDates(data.bookedDates);
