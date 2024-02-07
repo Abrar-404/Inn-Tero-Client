@@ -20,8 +20,11 @@ const Stat = () => {
             >
               {({ countUpRef, start }) => (
                 <div>
-                  <span ref={countUpRef} />
-                  <span>+</span>
+                  <span
+                    ref={countUpRef}
+                    className="font-script text-orange-400 font-bold mx-auto"
+                  />
+                  <span className="font-script">+</span>
                   <button onClick={start}></button>
                 </div>
               )}
@@ -44,8 +47,11 @@ const Stat = () => {
             >
               {({ countUpRef, start }) => (
                 <div>
-                  <span ref={countUpRef} />
-                  <span>+</span>
+                  <span
+                    ref={countUpRef}
+                    className="font-script text-orange-400 font-bold mx-auto"
+                  />
+                  <span className="font-script font-bold mx-auto">+</span>
                   <button onClick={start}></button>
                 </div>
               )}
@@ -68,8 +74,11 @@ const Stat = () => {
             >
               {({ countUpRef, start }) => (
                 <div>
-                  <span ref={countUpRef} />
-                  <span>+</span>
+                  <span
+                    ref={countUpRef}
+                    className="font-script text-orange-400 font-bold mx-auto"
+                  />
+                  <span className="font-script font-bold mx-auto">+</span>
                   <button onClick={start}></button>
                 </div>
               )}
