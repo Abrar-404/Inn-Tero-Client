@@ -4,7 +4,7 @@ import Marquee from 'react-fast-marquee';
 const Reviews = ({ id }) => {
   const [reviews, setReviews] = useState([]);
 
-  const url = `https://inn-tero.web.app/reviews/${id}`;
+  const url = `http://localhost:5000/reviews/${id}`;
   useEffect(() => {
     // setReviews(data);
     fetch(url)

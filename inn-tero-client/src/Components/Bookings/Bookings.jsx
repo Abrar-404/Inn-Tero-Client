@@ -57,7 +57,7 @@ const Bookings = ({ booking, setBookings }) => {
       confirmButtonText: 'Yes, Cancel it!',
     }).then(result => {
       if (result.isConfirmed) {
-        fetch(`https://inn-tero.web.app/addRoom/${id}`, {
+        fetch(`http://localhost:5000/addRoom/${id}`, {
           method: 'DELETE',
         })
           .then(res => res.json())

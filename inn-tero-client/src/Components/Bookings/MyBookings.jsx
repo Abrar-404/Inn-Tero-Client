@@ -7,7 +7,7 @@ const MyBookings = () => {
   const { user } = useContext(AuthContext);
   const [bookings, setBookings] = useState([]);
 
-  const url = `https://inn-tero.web.app/addRoom?email=${user.email}`;
+  const url = `http://localhost:5000/addRoom?email=${user.email}`;
 
   useEffect(() => {
     axios.get(url, { withCredentials: true }).then(res => {

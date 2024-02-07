@@ -6,7 +6,7 @@ const Feature = () => {
   const [features, setFeatures] = useState([]);
 
   useEffect(() => {
-    fetch('https://inn-tero.web.app/feature')
+    fetch('http://localhost:5000/feature')
       .then(res => res.json())
       .then(data => setFeatures(data));
   }, []);

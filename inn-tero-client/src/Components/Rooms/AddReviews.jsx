@@ -27,7 +27,7 @@ const AddReviews = ({ id }) => {
     };
     console.log(reviews);
 
-    const url = 'https://inn-tero.web.app/reviews';
+    const url = 'http://localhost:5000/reviews';
     fetch(url, {
       method: 'POST',
       headers: {

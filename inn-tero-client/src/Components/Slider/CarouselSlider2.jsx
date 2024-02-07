@@ -4,14 +4,12 @@ import '../Styles/sliderbtn.css';
 import { IoIosArrowForward } from 'react-icons/io';
 import { IoIosArrowBack } from 'react-icons/io';
 
-import img1 from '../../assets/img1.png';
-import img2 from '../../assets/img2.png';
-import img3 from '../../assets/img3.png';
-import img4 from '../../assets/img4.png';
-import img5 from '../../assets/img5.png';
-import img6 from '../../assets/img6.png';
-
-import image from '../../assets/banner.png';
+import img1 from '../../assets/img1.jpeg';
+import img2 from '../../assets/img2.jpg';
+import img3 from '../../assets/img3.jpg';
+import img4 from '../../assets/img4.jpg';
+import img5 from '../../assets/img5.jpeg';
+import img6 from '../../assets/img6.jpg';
 
 const CarouselSlider2 = () => {
   useEffect(() => {
@@ -67,7 +65,11 @@ const CarouselSlider2 = () => {
       <div class="carou">
         <div class="list">
           <div class="item">
-            <img src={image} alt="" />
+            <img
+              className="lg:w-[300px] lg:h-[400px] md:w-[300px] md:h-[200px] w-[300px] h-[100px] rounded-lg"
+              src={img1}
+              alt=""
+            />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
@@ -119,7 +121,7 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={image} alt="" />
+            <img src={img2} alt="" />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
@@ -171,7 +173,7 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={image} alt="" />
+            <img src={img3} alt="" />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
@@ -223,7 +225,7 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={image} alt="" />
+            <img src={img4} alt="" />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
@@ -275,7 +277,7 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={image} alt="" />
+            <img src={img5} alt="" />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
@@ -327,7 +329,7 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={image} alt="" />
+            <img src={img6} alt="" />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>

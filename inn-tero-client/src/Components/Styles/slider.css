@@ -31,8 +31,8 @@
   --item5-opacity: 0;
 }
 header {
-  width: 1140px;
-  max-width: 90%;
+  /* width: 1140px;
+  max-width: 90%; */
   display: flex;
   justify-content: space-between;
   margin: auto;

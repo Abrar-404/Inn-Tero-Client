@@ -6,7 +6,7 @@ const RoomCard = ({ room }) => {
 
   const [reviews, setReviews] = useState([]);
 
-  const url = `https://inn-tero.web.app/reviews/${_id}`;
+  const url = `http://localhost:5000/reviews/${_id}`;
   useEffect(() => {
     // setReviews(data);
     fetch(url)
