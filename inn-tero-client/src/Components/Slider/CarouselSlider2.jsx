@@ -282,25 +282,23 @@ const CarouselSlider2 = () => {
               alt=""
             />
             <div class="introduce">
-              <div class="title">DESIGN SLIDER</div>
-              <div class="topic">Aerphone</div>
+              <div class="title">Large</div>
+              <div class="topic">HALL</div>
               <div class="des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officia, laborum cumque dignissimos quidem atque et eligendi
-                aperiam voluptates beatae maxime.
+                Indulge in luxury dining at our hotel's grand hall, adorned with
+                exquisite decor and offering unparalleled culinary experiences.
               </div>
-              <button class="seeMore">SEE MORE &#8599</button>
+              <button class="seeMore">SEE MORE</button>
             </div>
             <div class="detail">
-              <div class="title">Aerphone GHTK</div>
+              <div class="title">LARGE HALL</div>
               <div class="des">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
-                reiciendis suscipit nobis nulla animi, modi explicabo quod
-                corrupti impedit illo, accusantium in eaque nam quia adipisci
-                aut distinctio porro eligendi. Reprehenderit nostrum
-                consequuntur ea! Accusamus architecto dolores modi ducimus
-                facilis quas voluptatibus! Tempora ratione accusantium magnam
-                nulla tenetur autem beatae.
+                Experience opulent dining in our hotel's expansive hall,
+                resplendent with lavish furnishings and elegant ambiance.
+                Immerse yourself in a gastronomic journey, surrounded by
+                impeccable service and stunning architectural details. Savor
+                exquisite flavors while basking in the sophistication and charm
+                of this distinguished culinary haven.
               </div>
               <div class="specifications">
                 <div>
