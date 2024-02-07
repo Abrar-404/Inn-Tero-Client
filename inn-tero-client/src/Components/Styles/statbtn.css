@@ -1,0 +1,39 @@
+.bhutta {
+ display: inline-block;
+ border-radius: 4px;
+ background-color: #D5B8D7;
+ border: none;
+ color: #FFFFFF;
+ text-align: center;
+ font-size: 17px;
+ padding: 16px;
+ width: 130px;
+ transition: all 0.5s;
+ cursor: pointer;
+ margin: 5px;
+}
+
+.bhutta span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+
+.bhutta span:after {
+ content: '»';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -15px;
+ transition: 0.5s;
+}
+
+.bhutta:hover span {
+ padding-right: 15px;
+}
+
+.bhutta:hover span:after {
+ opacity: 1;
+ right: 0;
+}

@@ -4,6 +4,7 @@ import Feature from '../Feature/Feature';
 import Footer from '../Footer/Footer';
 
 import Parallax from '../Parallax/Parallax';
+import Stat from '../Stat/Stat';
 
 import Timeline from '../Timeline/Timeline';
 import Video from '../Video/Video';
@@ -15,6 +16,10 @@ const Home = () => {
     <div className="space-y-10">
       <div>
         <CarouselSlider2></CarouselSlider2>
+      </div>
+
+      <div>
+        <Stat></Stat>
       </div>
       <BannerUp></BannerUp>
       <Banner></Banner>

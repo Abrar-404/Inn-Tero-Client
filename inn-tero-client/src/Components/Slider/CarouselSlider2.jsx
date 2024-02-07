@@ -1394,7 +1394,7 @@ const CarouselSlider2 = () => {
             </span>
           </div> */}
 
-          <button id="back">See All &#8599</button>
+          <button id="back">See All</button>
         </div>
       </div>
     </div>
