@@ -121,7 +121,11 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={img2} alt="" />
+            <img
+              className="lg:w-[300px] lg:h-[400px] md:w-[300px] md:h-[200px] w-[300px] h-[100px] rounded-lg"
+              src={img2}
+              alt=""
+            />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
@@ -173,7 +177,11 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={img3} alt="" />
+            <img
+              className="lg:w-[300px] lg:h-[400px] md:w-[300px] md:h-[200px] w-[300px] h-[100px] rounded-lg"
+              src={img3}
+              alt=""
+            />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
@@ -225,7 +233,11 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={img4} alt="" />
+            <img
+              className="lg:w-[300px] lg:h-[400px] md:w-[300px] md:h-[200px] w-[300px] h-[100px] rounded-lg"
+              src={img4}
+              alt=""
+            />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
@@ -277,7 +289,11 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={img5} alt="" />
+            <img
+              className="lg:w-[300px] lg:h-[400px] md:w-[300px] md:h-[200px] w-[300px] h-[100px] rounded-lg"
+              src={img5}
+              alt=""
+            />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
