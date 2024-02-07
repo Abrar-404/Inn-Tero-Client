@@ -14,14 +14,16 @@ import CarouselSlider2 from './../Slider/CarouselSlider2';
 const Home = () => {
   return (
     <div className="space-y-10">
-      <div>
+      <div className="">
         <CarouselSlider2></CarouselSlider2>
       </div>
-
       <div>
         <Stat></Stat>
       </div>
-      <BannerUp></BannerUp>
+
+      <div className="mt-32">
+        <BannerUp></BannerUp>
+      </div>
       <Banner></Banner>
 
       <div className="mt-20">
