@@ -62,6 +62,7 @@ const Rooms = () => {
 
   return (
     <div>
+      {/* https://www.google.com/search?q=%3Cdiv+class%3D%22rounded-xl+bg-card+text-card-foreground+shadow+h-72 flex sticky border-2+border-slate-500+top-%5B14rem%5D%22%3Eflex&sourceid=chrome&ie=UTF-8 */}
       <div className="flex justify-center">
         <form className="">
           <select
