@@ -345,7 +345,11 @@ const CarouselSlider2 = () => {
           </div>
 
           <div class="item">
-            <img src={img6} alt="" />
+            <img
+              className="lg:w-[300px] lg:h-[400px] md:w-[300px] md:h-[200px] w-[300px] h-[100px] rounded-lg"
+              src={img6}
+              alt=""
+            />
             <div class="introduce">
               <div class="title">DESIGN SLIDER</div>
               <div class="topic">Aerphone</div>
