@@ -1,0 +1,35 @@
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: anim 10s linear infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text span{
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  font-weight: 800;
+  transform-origin: 0 100px;
+}

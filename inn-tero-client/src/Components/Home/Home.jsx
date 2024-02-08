@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer';
 import Parallax from '../Parallax/Parallax';
 import PreLoader from '../Preloader/Preloader';
 import Stat from '../Stat/Stat';
+import TextCircle from '../TextCircle/TextCircle';
 
 import Timeline from '../Timeline/Timeline';
 import Video from '../Video/Video';
@@ -23,6 +24,8 @@ const Home = () => {
         <div>
           <Stat></Stat>
         </div>
+
+        <TextCircle></TextCircle>
 
         <div className="mt-32">
           <BannerUp></BannerUp>
