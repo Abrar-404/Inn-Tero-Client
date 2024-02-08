@@ -22,3 +22,5 @@ gsap.fromTo(
     delay: 0.5,
   }
 );
+
+

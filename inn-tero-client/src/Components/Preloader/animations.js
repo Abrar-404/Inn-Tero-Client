@@ -21,7 +21,7 @@ export const preLoaderAnim = () => {
       ease: 'Power3.easeOut',
     })
     .from('.texts-container span', {
-      duration: 1.5,
+      duration: 2,
       delay: 1,
       y: 70,
       skewY: 10,
@@ -29,7 +29,7 @@ export const preLoaderAnim = () => {
       ease: 'Power3.easeOut',
     })
     .to('.texts-container span', {
-      duration: 1,
+      duration: 2,
       y: 70,
       skewY: -20,
       stagger: 0.2,
@@ -37,7 +37,7 @@ export const preLoaderAnim = () => {
     })
 
     .to('.landing', {
-      duration: 0.02,
+      duration: 0.05,
       css: { overflowY: 'hidden', height: 'unset' },
     })
     .to('body', {
@@ -54,7 +54,7 @@ export const preLoaderAnim = () => {
     .to(
       '.preloader',
       {
-        duration: 0.8,
+        duration: 1.5,
         height: '0vh',
         ease: 'Power3.easeOut',
         onComplete: mobileLanding(),
@@ -118,7 +118,7 @@ export const openMenu = () => {
     })
     .to('.cls-1', {
       duration: 0.1,
-      delay: 0.1,
+      delay: 0.3,
       css: { fill: '#ffffff' },
     })
     .to(
