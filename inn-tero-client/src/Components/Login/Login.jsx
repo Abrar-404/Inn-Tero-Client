@@ -10,6 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from '../../Providers/AuthProvider';
 import axios from 'axios';
+import PreLoader from '../Preloader/Preloader';
 
 const Login = () => {
   const { loginUser, googleSignIn, googleRegister } = useContext(AuthContext);
@@ -108,6 +109,7 @@ const Login = () => {
 
   return (
     <>
+      <PreLoader></PreLoader>
       <ToastContainer />
       <div className="hero  min-h-screen">
         <div className="hero-content  flex-col lg:flex-row-reverse">

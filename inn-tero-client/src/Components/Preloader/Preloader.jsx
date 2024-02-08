@@ -16,7 +16,7 @@ const PreLoader = () => {
         </span>
         <span className="font-script"> Tero</span>
         <span>
-          <img src={anim}></img>
+          <img className='h-[60px]' src={anim}></img>
         </span>
       </div>
     </div>
