@@ -7,6 +7,7 @@ import { GiEnergyArrow } from 'react-icons/gi';
 import { AuthContext } from '../../Providers/AuthProvider';
 import Swal from 'sweetalert2';
 import Button from '../Button/Button';
+import PreLoader from '../Preloader/Preloader';
 
 const Register = () => {
   const { registerUser, googleSignIn, googleRegister } = useContext(AuthContext);
@@ -129,6 +130,7 @@ const Register = () => {
 
   return (
     <>
+      <PreLoader></PreLoader>
       <ToastContainer />
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">

@@ -25,6 +25,7 @@
 // export default Rooms;
 
 import { useEffect, useState } from 'react';
+import PreLoader from '../Preloader/Preloader';
 import RoomCard from './RoomCard';
 
 const Rooms = () => {
@@ -62,6 +63,7 @@ const Rooms = () => {
 
   return (
     <div>
+      <PreLoader></PreLoader>
       <div className="flex justify-center">
         <form className="">
           <select

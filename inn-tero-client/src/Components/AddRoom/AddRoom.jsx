@@ -6,6 +6,7 @@ import Swal from 'sweetalert2';
 import React, { useState, useEffect } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css'; // Import calendar styles
+import PreLoader from '../Preloader/Preloader';
 
 const AddRoom = () => {
   const addRoomDet = useLoaderData();
@@ -110,6 +111,7 @@ const AddRoom = () => {
 
   return (
     <div>
+      <PreLoader></PreLoader>
       <h1>Add Room : {title}</h1>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">

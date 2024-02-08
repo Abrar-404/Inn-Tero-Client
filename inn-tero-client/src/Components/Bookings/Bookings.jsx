@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import PreLoader from '../Preloader/Preloader';
 
 // eslint-disable-next-line react/prop-types
 const Bookings = ({ booking, setBookings }) => {
@@ -80,6 +81,7 @@ const Bookings = ({ booking, setBookings }) => {
 
   return (
     <div>
+      <PreLoader></PreLoader>
       <div className="hero mb-10">
         <div className="hero-content flex-col lg:flex-row">
           <img

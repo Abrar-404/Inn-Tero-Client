@@ -18,10 +18,10 @@
 .preloader .texts-container {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: center;
   height: 60px;
   width: 280px;
-  font-size: xx-large;
+  font-size: 32px;
   overflow: hidden;
   font-weight: 800;
   opacity: 0;
@@ -30,7 +30,7 @@
 
 @media (max-width: 767px) {
   .preloader .texts-cont {
-    font-size: 17px;
+    font-size: 32px;
     width: 240px;
   }
 }

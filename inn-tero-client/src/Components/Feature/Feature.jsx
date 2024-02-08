@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import FeatureCard from './FeatureCard';
 import { TypeAnimation } from 'react-type-animation';
+import PreLoader from '../Preloader/Preloader';
 
 const Feature = () => {
   const [features, setFeatures] = useState([]);
@@ -13,6 +14,7 @@ const Feature = () => {
 
   return (
     <div>
+      <PreLoader></PreLoader>
       <div className="text-center font-script font-extrabold text-[#aa7474] text-3xl mb-5 mt-20 ">
         <TypeAnimation
           sequence={[

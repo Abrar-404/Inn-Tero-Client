@@ -6,6 +6,7 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css'; // Import calendar styles
 import { AuthContext } from '../../Providers/AuthProvider';
 import Swal from 'sweetalert2';
+import PreLoader from '../Preloader/Preloader';
 
 const UpdateBooking = () => {
   const addRoomDet = useLoaderData();
@@ -120,6 +121,7 @@ const UpdateBooking = () => {
   }, [service_id]); // Fetch booked dates whenever the _id changes
   return (
     <div>
+      <PreLoader></PreLoader>
       <h1>Add Room : {title}</h1>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">

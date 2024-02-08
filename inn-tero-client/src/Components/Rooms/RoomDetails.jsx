@@ -1,21 +1,22 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-import "../Styles/button.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import '../Styles/button.css';
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
 
-import "../Banner/banner.css";
+import '../Banner/banner.css';
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper/modules";
-import { Link, useLoaderData } from "react-router-dom";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.css";
-import AddReviews from "./AddReviews";
-import Reviews from "./Reviews";
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { Link, useLoaderData } from 'react-router-dom';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import AddReviews from './AddReviews';
+import Reviews from './Reviews';
+import PreLoader from '../Preloader/Preloader';
 
 export default function RoomDetails() {
   const roomDetail = useLoaderData();
@@ -33,16 +34,17 @@ export default function RoomDetails() {
   //   console.log(roomDetail);
   return (
     <>
+      <PreLoader></PreLoader>
       <div className="flex justify-center mt-20">
         <h1 className="text-7xl font-bold font-script  text-black">
           Your <span className="text-red-600"> Stayings</span>
         </h1>
       </div>
       <Swiper
-        effect={"coverflow"}
+        effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={"auto"}
+        slidesPerView={'auto'}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -117,7 +119,7 @@ export default function RoomDetails() {
           <AddReviews id={_id} />
         </button>
       </div>
-      <div  >
+      <div>
         <Reviews id={_id} />
       </div>
 
