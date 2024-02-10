@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import '../Styles/circletext.css';
 import '../Styles/customfont.css';
+import { FaCircleCheck } from 'react-icons/fa6';
+import { BsArrowRight } from 'react-icons/bs';
 
 const TextCircle = () => {
   useEffect(() => {
@@ -20,7 +22,7 @@ const TextCircle = () => {
 
   return (
     <div>
-      <div className="flex justify-start md:flex-col lg:flex-row flex-col mx-auto gap-10 border-2 border-red-500">
+      <div className="flex md:flex-col lg:flex-row flex-col mx-auto gap-14 border-2 border-red-500 mt-72 justify-center">
         <div>
           <img
             src="https://t3.ftcdn.net/jpg/06/19/00/08/360_F_619000872_AxiwLsfQqRHMkNxAbN4l5wg1MsPgBsmo.jpg"
@@ -39,23 +41,24 @@ const TextCircle = () => {
         </div>
 
         <div>
-          <div className="relative">
-            <img
-              className="h-[220px] w-[220px]"
-              src="https://i.ibb.co/R0Zq6RY/bedroom-1285156-1280.jpg"
-              alt=""
-            />
-          </div>
-
-          <div className="absolute lg:bottom-[-590px] lg:right-[500px] md:right-[470px] md:bottom-[-1500px] bottom-[-1000px] right-[90px]">
-            <div className="circle">
+          <div>
+            <div className="relative">
               <img
-                className="rounded-full w-[150px] h-[150px]"
-                src="https://media.istockphoto.com/id/1390233984/photo/modern-luxury-bedroom.jpg?s=612x612&w=0&k=20&c=po91poqYoQTbHUpO1LD1HcxCFZVpRG-loAMWZT7YRe4="
+                className="h-[220px] w-[220px]"
+                src="https://i.ibb.co/R0Zq6RY/bedroom-1285156-1280.jpg"
                 alt=""
               />
-              <div className="text">
-                <p>Inn-Tero Experience Elegantly here</p>
+              <div className="absolute lg:bottom-[70px] lg:right-[300px] md:right-[470px] md:bottom-[50px] bottom-[60px] right-[90px]">
+                <div className="circle">
+                  <img
+                    className="rounded-full w-[150px] h-[150px]"
+                    src="https://media.istockphoto.com/id/1390233984/photo/modern-luxury-bedroom.jpg?s=612x612&w=0&k=20&c=po91poqYoQTbHUpO1LD1HcxCFZVpRG-loAMWZT7YRe4="
+                    alt=""
+                  />
+                  <div className="text">
+                    <p>Inn-Tero Experience Elegantly here</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -66,13 +69,57 @@ const TextCircle = () => {
             <h1 className="font-cardo  lg:text-5xl text-3xl">
               ONE OF THE ELEGANT <br /> INN IN THE AREA
             </h1>
-            <div>
-              <h1 className="font-outfit text-[#7c8083] mt-5">
-                The masterbuilder of human happiness no one <br /> dislikes, too
-                avoids pleasure itself because it is <br /> pleasure, but
-                because those who do not knows <br /> pleasure rationally
-                encounters consequences <br /> pursues or desires to obtain.
-              </h1>
+
+            <div className="flex mt-5 gap-7 lg:flex-row md:flex-col flex-col">
+              <div>
+                <h1 className="font-outfit text-[#7c8083]">
+                  The masterbuilder of human happiness no one <br /> dislikes,
+                  too avoids pleasure itself because it is <br /> pleasure, but
+                  because those who do not knows <br /> pleasure rationally
+                  encounters consequences <br /> pursues or desires to obtain.
+                </h1>
+
+                <ul className="list-item clearfix mt-5 font-outfit">
+                  <li className="flex items-center gap-2 border-b-2">
+                    <i className="flaticon-basic-tick" />{' '}
+                    <span className="text-2xl text-[#a9774e]">
+                      <FaCircleCheck />
+                    </span>{' '}
+                    <span className=" text-[#8d8b8a] lg:text-xl md:text-xl text-sm pb-2">
+                      Experience luxury in the lap of nature
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2 border-b-2 mt-2">
+                    <i className="flaticon-basic-tick" />{' '}
+                    <span className="text-2xl text-[#a9774e]">
+                      <FaCircleCheck />
+                    </span>{' '}
+                    <span className=" text-[#8d8b8a] lg:text-xl md:text-xl text-sm mt-2 ">
+                      {' '}
+                      Providing iconic experiences
+                    </span>
+                  </li>
+                </ul>
+
+                <div className="mt-12">
+                  <div className="flex items-center gap-2 ">
+                    <span className="text-4xl font-thin text-[#A9774E]">
+                      <BsArrowRight />{' '}
+                    </span>
+                    <span className="font-outfit text-sm font-bold text-black">
+                      More About Us
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <img
+                  className="w-[280px] h-[240px]"
+                  src="https://fastwpdemo.com/newwp/grandeur/wp-content/uploads/2023/02/about-3.jpg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
