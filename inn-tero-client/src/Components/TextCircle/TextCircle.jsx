@@ -23,7 +23,7 @@ const TextCircle = () => {
   return (
     <div>
       <div className="flex md:flex-col lg:flex-row flex-col mx-auto gap-14 border-2 border-red-500 mt-72 justify-center">
-        <div>
+        <div className=''>
           <img
             src="https://t3.ftcdn.net/jpg/06/19/00/08/360_F_619000872_AxiwLsfQqRHMkNxAbN4l5wg1MsPgBsmo.jpg"
             alt=""
@@ -48,15 +48,17 @@ const TextCircle = () => {
                 src="https://i.ibb.co/R0Zq6RY/bedroom-1285156-1280.jpg"
                 alt=""
               />
-              <div className="absolute lg:bottom-[70px] lg:right-[300px] md:right-[470px] md:bottom-[50px] bottom-[60px] right-[90px]">
-                <div className="circle">
-                  <img
-                    className="rounded-full w-[150px] h-[150px]"
-                    src="https://media.istockphoto.com/id/1390233984/photo/modern-luxury-bedroom.jpg?s=612x612&w=0&k=20&c=po91poqYoQTbHUpO1LD1HcxCFZVpRG-loAMWZT7YRe4="
-                    alt=""
-                  />
-                  <div className="text">
-                    <p>Inn-Tero Experience Elegantly here</p>
+              <div className="absolute lg:bottom-[70px] lg:right-[400px] f md:right-[470px] md:bottom-[50px] flex justify-center bottom-[60px] right-[90px]">
+                <div>
+                  <div className="circle">
+                    <img
+                      className="rounded-full w-[150px] h-[150px]"
+                      src="https://media.istockphoto.com/id/1390233984/photo/modern-luxury-bedroom.jpg?s=612x612&w=0&k=20&c=po91poqYoQTbHUpO1LD1HcxCFZVpRG-loAMWZT7YRe4="
+                      alt=""
+                    />
+                    <div className="text">
+                      <p>Inn-Tero Experience Elegantly here</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -72,7 +74,7 @@ const TextCircle = () => {
 
             <div className="flex mt-5 gap-7 lg:flex-row md:flex-col flex-col">
               <div>
-                <h1 className="font-outfit text-[#7c8083]">
+                <h1 className="font-outfit text-[#7c8083] flex lg:justify-start md:justify-center justify-center">
                   The masterbuilder of human happiness no one <br /> dislikes,
                   too avoids pleasure itself because it is <br /> pleasure, but
                   because those who do not knows <br /> pleasure rationally
@@ -80,7 +82,7 @@ const TextCircle = () => {
                 </h1>
 
                 <ul className="list-item clearfix mt-5 font-outfit">
-                  <li className="flex items-center gap-2 border-b-2">
+                  <li className="flex items-center justify-center gap-2 border-b-2">
                     <i className="flaticon-basic-tick" />{' '}
                     <span className="text-2xl text-[#a9774e]">
                       <FaCircleCheck />
@@ -89,7 +91,7 @@ const TextCircle = () => {
                       Experience luxury in the lap of nature
                     </span>
                   </li>
-                  <li className="flex items-center gap-2 border-b-2 mt-2">
+                  <li className="flex items-center justify-center lg:justify-start md:justify-center gap-2 border-b-2 mt-2">
                     <i className="flaticon-basic-tick" />{' '}
                     <span className="text-2xl text-[#a9774e]">
                       <FaCircleCheck />
@@ -115,7 +117,7 @@ const TextCircle = () => {
 
               <div>
                 <img
-                  className="w-[280px] h-[240px]"
+                  className=""
                   src="https://fastwpdemo.com/newwp/grandeur/wp-content/uploads/2023/02/about-3.jpg"
                   alt=""
                 />
