@@ -66,10 +66,10 @@ const TextCircle = () => {
             </div>
           </div>
           <div className="mt-4">
-            <h1 className="font-cursive mx-auto md:text-center justify-center flex font-bold text-3xl text-[#FB9541]">
+            <h1 className="font-cursive mx-auto md:text-center lg:text-start text-center lg:justify-start justify-center flex font-bold text-3xl text-[#FB9541]">
               About Our Inn
             </h1>
-            <h1 className="font-cardo mx-auto md:text-center justify-center flex lg:text-5xl text-3xl">
+            <h1 className="font-cardo mx-auto md:text-center lg:text-left justify-center lg:justify-start  flex lg:text-5xl text-3xl">
               ONE OF THE ELEGANT <br /> INN IN THE AREA
             </h1>
 
@@ -109,7 +109,7 @@ const TextCircle = () => {
                     <span className="text-4xl font-thin text-[#A9774E]">
                       <BsArrowRight />{' '}
                     </span>
-                    <span className="font-outfit text-sm font-bold text-black">
+                    <span className="font-outfit text-sm font-bold">
                       More About Us
                     </span>
                   </div>
