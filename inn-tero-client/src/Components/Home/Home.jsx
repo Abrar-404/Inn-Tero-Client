@@ -1,5 +1,6 @@
 import Banner from '../Banner/Banner';
 import BannerUp from '../BannerUp/BannerUp';
+import ClassySlider from '../ClassySection/ClassySlider';
 import Feature from '../Feature/Feature';
 import Footer from '../Footer/Footer';
 
@@ -26,6 +27,9 @@ const Home = () => {
         </div>
 
         <TextCircle></TextCircle>
+
+
+        <ClassySlider></ClassySlider>
 
         <div className="mt-32">
           <BannerUp></BannerUp>

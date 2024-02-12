@@ -105,7 +105,7 @@ const TextCircle = () => {
                 </ul>
 
                 <div className="mt-12">
-                  <div className="flex mx-auto md:text-center justify-center items-center gap-2 ">
+                  <div className="flex mx-auto md:text-center justify-center lg:justify-start items-center gap-2 ">
                     <span className="text-4xl font-thin text-[#A9774E]">
                       <BsArrowRight />{' '}
                     </span>
