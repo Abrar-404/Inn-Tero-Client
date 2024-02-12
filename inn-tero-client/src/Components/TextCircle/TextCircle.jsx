@@ -25,6 +25,7 @@ const TextCircle = () => {
       <div className="flex md:flex-col lg:flex-row flex-col mx-auto gap-14 border-2 border-red-500 mt-72 justify-center">
         <div className=''>
           <img
+            className='flex md:justify-center mx-auto'
             src="https://t3.ftcdn.net/jpg/06/19/00/08/360_F_619000872_AxiwLsfQqRHMkNxAbN4l5wg1MsPgBsmo.jpg"
             alt=""
           />
@@ -65,7 +66,7 @@ const TextCircle = () => {
             </div>
           </div>
           <div className="mt-4">
-            <h1 className="font-cursive font-bold text-3xl text-[#FB9541]">
+            <h1 className="font-cursive mx-auto md:text-center justify-center flex font-bold text-3xl text-[#FB9541]">
               About Our Inn
             </h1>
             <h1 className="font-cardo  lg:text-5xl text-3xl">
