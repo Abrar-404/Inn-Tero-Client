@@ -28,7 +28,7 @@ const TextCircle = () => {
             src="https://t3.ftcdn.net/jpg/06/19/00/08/360_F_619000872_AxiwLsfQqRHMkNxAbN4l5wg1MsPgBsmo.jpg"
             alt=""
           />
-          <h1 className="text-4xl font-cardo text-[#bdb9b5] font-medium mt-10">
+          <h1 className="text-4xl font-cardo lg:text-left md:text-center text-center text-[#bdb9b5] font-medium mt-10">
             BOOK YOUR <br /> DELEGANT <br /> STAYINGS WITH <br /> OUR INN
           </h1>
           <div className="border-t-2 border-2 border-black mt-5">{'  '}</div>
