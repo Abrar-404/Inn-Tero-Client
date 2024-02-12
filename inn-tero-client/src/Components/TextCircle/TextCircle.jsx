@@ -22,7 +22,7 @@ const TextCircle = () => {
 
   return (
     <div>
-      <div className="flex md:flex-col lg:flex-row flex-col mx-auto gap-14 border-2 border-red-500 mt-72 justify-center">
+      <div className="flex md:flex-col lg:flex-row flex-col mx-auto gap-14 mt-72 justify-center">
         <div className="">
           <img
             className="flex md:justify-center mx-auto"
