@@ -23,9 +23,9 @@ const TextCircle = () => {
   return (
     <div>
       <div className="flex md:flex-col lg:flex-row flex-col mx-auto gap-14 border-2 border-red-500 mt-72 justify-center">
-        <div className=''>
+        <div className="">
           <img
-            className='flex md:justify-center mx-auto'
+            className="flex md:justify-center mx-auto"
             src="https://t3.ftcdn.net/jpg/06/19/00/08/360_F_619000872_AxiwLsfQqRHMkNxAbN4l5wg1MsPgBsmo.jpg"
             alt=""
           />
@@ -69,13 +69,13 @@ const TextCircle = () => {
             <h1 className="font-cursive mx-auto md:text-center justify-center flex font-bold text-3xl text-[#FB9541]">
               About Our Inn
             </h1>
-            <h1 className="font-cardo  lg:text-5xl text-3xl">
+            <h1 className="font-cardo mx-auto md:text-center justify-center flex lg:text-5xl text-3xl">
               ONE OF THE ELEGANT <br /> INN IN THE AREA
             </h1>
 
             <div className="flex mt-5 gap-7 lg:flex-row md:flex-col flex-col">
               <div>
-                <h1 className="font-outfit text-[#7c8083] flex lg:justify-start md:justify-center justify-center">
+                <h1 className="font-outfit text-[#7c8083] flex lg:justify-start md:justify-center justify-center mx-auto">
                   The masterbuilder of human happiness no one <br /> dislikes,
                   too avoids pleasure itself because it is <br /> pleasure, but
                   because those who do not knows <br /> pleasure rationally
@@ -105,7 +105,7 @@ const TextCircle = () => {
                 </ul>
 
                 <div className="mt-12">
-                  <div className="flex items-center gap-2 ">
+                  <div className="flex mx-auto md:text-center justify-center items-center gap-2 ">
                     <span className="text-4xl font-thin text-[#A9774E]">
                       <BsArrowRight />{' '}
                     </span>
@@ -118,7 +118,7 @@ const TextCircle = () => {
 
               <div>
                 <img
-                  className=""
+                  className="mx-auto md:text-center justify-center flex"
                   src="https://fastwpdemo.com/newwp/grandeur/wp-content/uploads/2023/02/about-3.jpg"
                   alt=""
                 />
